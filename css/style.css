@@ -1,0 +1,147 @@
+:root {
+  --bg-primary: #00985b;
+  --bg-secondary: #00492c;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: aliceblue;
+  color: #fff !important;
+}
+#hero {
+  background-image: linear-gradient(
+    to right,
+    var(--bg-primary),
+    var(--bg-secondary) 80%
+  );
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+#hero nav ul li a {
+  font-size: 0.9rem !important;
+  color: blue;
+}
+#hero .bg-1{
+  background-image: url('../Assets/Resource1/imageedit-1.png');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: bottom 65% right -30%;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+#hero button,
+#hero input[type="submit"] {
+  font-weight: 500;
+}
+#hero nav a {
+  color: #fff !important;
+}
+#hero .content h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+#hero .content p {
+  font-weight: 400;
+  font-size: .9rem;
+}
+#hero .content a {
+  font-weight: 700;
+  font-size: .9rem;
+  color: var(--bg-secondary);
+}
+
+#layanan h2,
+#fitur h2,
+#rekomendasi h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--bg-primary);
+}
+#layanan p {
+  color: #000;
+}
+#layanan .row h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--bg-primary);
+}
+#layanan .row p {
+  font-size: .7rem;
+}
+#layanan .card:hover {
+  background-image: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary));
+}
+#layanan .card:hover img{
+  background-color: #fff !important;
+}
+#layanan .card:hover h5,
+#layanan .card:hover p {
+  color: #fff;
+}
+
+#main {
+  background-image: url("../Assets/Resource2/green-interion.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+#main h2 {
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+#main p {
+  font-weight: 400;
+  width: 60%;
+  margin: auto;
+}
+#main .row ul {
+  background-color: rgba(255, 255, 255, .5);
+  width: 30%;
+}
+#main .row ul li a {
+  color: #000;
+}
+#main nav {
+  background-color: rgba(255, 255, 255, .8);
+}
+#main nav a {
+  color: var(--bg-primary);
+}
+
+#rekomedasi {
+  height: 100vh;
+}
+#rekomendasi .card {
+  transition: .5s !important;
+}
+#rekomendasi .card .row small {
+  font-size: .8rem;
+}
+#rekomendasi .card:hover {
+  background-image: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary));
+  transition: 5s !important;
+}
+#rekomendasi .card:hover h5, 
+#rekomendasi .card:hover p {
+  color: #fff;
+}
+
+#fitur .row .card {
+  background-repeat: no-repeat; 
+  background-size: cover;
+  width: 20rem;
+  height: 30rem;
+}
+#fitur .row .card-1 {
+  background-image: url("../Assets/Resource3/image13.png");
+}
+#fitur .row .card-2 {
+  background-image: url("../Assets/Resource3/image16.png");
+}
+#fitur .row .card-3 {
+  background-image: url("../Assets/Resource3/image17.png");
+}
+
