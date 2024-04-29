@@ -145,3 +145,29 @@ body {
   background-image: url("../Assets/Resource3/image17.png");
 }
 
+#contacts {
+  background-image: url("../Assets/Resource1/image\ 20.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  overflow: hidden;
+}
+
+#contacts .container-fluid{
+  background-color: rgba(0, 0, 0, .5);
+}
+#contacts .row h2 {
+  line-height: 45px;
+  letter-spacing: 1.5px;
+  font-size: 2.3rem;
+}
+#contacts .row h5 {
+  font-size: 1rem;
+}
+#contacts .row li {
+  font-size: .8rem;
+}
+/* #contacts form input {
+  background: ;
+} */
