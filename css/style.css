@@ -168,6 +168,16 @@ body {
 #contacts .row li {
   font-size: .8rem;
 }
-/* #contacts form input {
-  background: ;
-} */
+#contacts .row form input {
+  background: #DDE6ED;
+  border: none;
+  box-shadow: none;
+}
+
+footer .row a {
+  font-size: .9rem;
+}
+
+footer span {
+  font-size: .7rem;
+}
