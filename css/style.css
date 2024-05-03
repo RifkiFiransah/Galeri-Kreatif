@@ -18,15 +18,13 @@ body {
   position: relative;
   overflow-y: hidden;
 }
-#hero nav ul li a {
-  font-size: 0.9rem !important;
-  color: blue;
-}
 #hero .bg-1{
-  background-image: url('../Assets/Resource1/imageedit-1.png');
+  background-image: url('../Assets/img/Hero\ Image.png');
+  /* background-color: #000; */
   background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: bottom 65% right -30%;
+  background-size: 55%;
+  background-position: right bottom;
+  top: 0%;
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -34,9 +32,6 @@ body {
 #hero button,
 #hero input[type="submit"] {
   font-weight: 500;
-}
-#hero nav a {
-  color: #fff !important;
 }
 #hero .content h1 {
   font-weight: 700;
@@ -70,19 +65,27 @@ body {
 #layanan .row p {
   font-size: .7rem;
 }
+#layanan .card {
+  background-color: #fff;
+  transition: all 1.5s;
+}
 #layanan .card:hover {
-  background-image: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary));
+  /* background: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary)); */
+  background-color: var(--bg-primary);
+  opacity: 1;
 }
 #layanan .card:hover img{
+  transition: all .5s;
   background-color: #fff !important;
 }
 #layanan .card:hover h5,
 #layanan .card:hover p {
+  transition: all .5s;
   color: #fff;
 }
 
 #main {
-  background-image: url("../Assets/Resource2/green-interion.png");
+  background-image: url("../Assets/img/Img-search.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -115,47 +118,57 @@ body {
   height: 100vh;
 }
 #rekomendasi .card {
-  transition: .5s !important;
+  transition: all .3s;
 }
 #rekomendasi .card .row small {
   font-size: .8rem;
 }
 #rekomendasi .card:hover {
-  background-image: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary));
-  transition: 5s !important;
+  /* background-image: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary)); */
+  background-color: var(--bg-secondary);
 }
 #rekomendasi .card:hover h5, 
 #rekomendasi .card:hover p {
   color: #fff;
+  transition: all .3s;
 }
 
-#fitur .row .card {
+#fitur .row .card-fitur {
   background-repeat: no-repeat; 
   background-size: cover;
-  width: 20rem;
+  width: 30%;
   height: 30rem;
 }
+#fitur .row .card-fitur .overlay {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, .5);
+  transition: all 1s ease;
+}
+#fitur .row .card-fitur:hover .overlay {
+  opacity: 1;
+}
 #fitur .row .card-1 {
-  background-image: url("../Assets/Resource3/image13.png");
+  background-image: url("../Assets/img/Fitur\ Rumah\ 1.png");
 }
 #fitur .row .card-2 {
-  background-image: url("../Assets/Resource3/image16.png");
+  background-image: url("../Assets/img/Fitur\ Rumah\ 2.png");
 }
 #fitur .row .card-3 {
-  background-image: url("../Assets/Resource3/image17.png");
+  background-image: url("../Assets/img/Fitur\ Rumah\ 3.png");
 }
 
 #contacts {
-  background-image: url("../Assets/Resource1/image\ 20.png");
+  background-image: url("../Assets/img/kontak-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
 }
 
 #contacts .container-fluid{
   background-color: rgba(0, 0, 0, .5);
+  height: 100vh;
 }
 #contacts .row h2 {
   line-height: 45px;
