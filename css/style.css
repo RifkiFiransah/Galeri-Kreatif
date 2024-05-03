@@ -67,7 +67,10 @@ body {
 }
 #layanan .card {
   background-color: #fff;
-  transition: all 1.5s;
+  transition: all .5s ease-in-out;
+}
+#layanan .card {
+  max-height: 250px;
 }
 #layanan .card:hover {
   /* background: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary)); */
