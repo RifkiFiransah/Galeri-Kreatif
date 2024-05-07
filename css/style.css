@@ -49,7 +49,8 @@ body {
 
 #layanan h2,
 #fitur h2,
-#rekomendasi h2 {
+#rekomendasi h2,
+#testimonial h2 {
   font-weight: 700;
   font-size: 2.5rem;
   color: var(--bg-primary);
@@ -160,6 +161,30 @@ body {
   background-image: url("../Assets/img/Fitur\ Rumah\ 3.png");
 }
 
+#testimonial {
+  padding: 80px 0;
+}
+
+#testimonial .card:hover {
+  transform: scale(1.03);
+  transition: .2s ease-in-out;
+}
+
+#testimonial .card-title {
+  color: var(--bg-primary);
+  font-weight: 600;
+}
+
+#testimonial .card-subtitle {
+  font-size: 0.8rem;
+  color: #bbbbbb;
+}
+
+#testimonial .icon-star {
+  color: #ffd43b;
+  margin-right: 5px;
+}
+
 #contacts {
   background-image: url("../Assets/img/kontak-img.png");
   background-repeat: no-repeat;
@@ -190,10 +215,14 @@ body {
   box-shadow: none;
 }
 
-footer .row a {
-  font-size: .9rem;
+footer {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--bg-primary),
+    var(--bg-secondary) 80%
+  );
 }
 
-footer span {
-  font-size: .7rem;
+footer a:hover {
+  color: #ffd43b !important;
 }
