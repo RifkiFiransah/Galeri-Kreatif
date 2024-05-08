@@ -10,6 +10,9 @@
   --font-serif: "Marcellus", serif;
   --font-sans-serif: "Oxygen", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-sans-serif);
   font-size: 16px;
@@ -410,4 +413,24 @@ footer .row .d-flex a {
 
 footer .row .d-flex a:hover {
   color: var(--bg-coklat-400);
+}
+/* Lokasi */
+#lokasi p {
+  color: #000;
+}
+#layanan h2,
+#fitur h2,
+#rekomendasi h2,
+#testimonial h2,
+#lokasi h2{
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--bg-coklat-200);
+}
+#lokasi h3{
+  font-size: 1.4rem;
+  color: var(--bg-coklat-200);
+}
+#lokasi{
+  background-color: white;
 }
