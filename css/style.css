@@ -1,6 +1,12 @@
 :root {
-  --bg-primary: #00985b;
-  --bg-secondary: #00492c;
+  --bg-coklat-100: #F7DEB2;
+  --bg-coklat-200: #D09B69;
+  --bg-coklat-300: #A36F44;
+  --bg-coklat-400: #6B4732;
+  --bg-coklat-500: #3F2D26;
+  --bg-hijau: #8C9839;
+  --bg-maroon: #803D3B;
+  --bg-navy: #30475E;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -8,26 +14,66 @@ body {
   background-color: aliceblue;
   color: #fff !important;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Marcellus', serif;
+}
+p {
+  font-family: 'Oxygen', sans-serif;
+}
+.text-kreatif {
+  color: var(--bg-coklat-400);
+}
+.text-kreatif-300 {
+  color: var(--bg-coklat-300);
+}
+.bg-coklat-300 {
+  border: 1px solid var(--bg-coklat-300);
+  color: var(--bg-coklat-300);
+}
+.bg-coklat-300:hover {
+  background-color: var(--bg-coklat-300);
+  color: white;
+}
+.btn-coklat-300 {
+  background-color: var(--bg-coklat-300);
+}
+.btn-coklat-300:hover {
+  background-color: var(--bg-coklat-400);
+}
 #hero {
-  background-image: linear-gradient(
-    to right,
-    var(--bg-primary),
-    var(--bg-secondary) 80%
-  );
+  background-image: url("../Assets/img-kreatif/bg-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
   overflow-y: hidden;
 }
+#hero a {
+  font-family: "Marcellus","Poppins", sans-serif;
+}
+#hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  background-image: linear-gradient(0deg, rgba(1,1,3,1) 1%, rgba(255,255,255, 0) 100%)
+}
 #hero .bg-1{
-  background-image: url('../Assets/img/Hero\ Image.png');
-  /* background-color: #000; */
-  background-repeat: no-repeat;
-  background-size: 55%;
-  background-position: right bottom;
-  top: 0%;
+  top: 82%;
   width: 100%;
   height: 100vh;
   position: absolute;
+  z-index: 1;
+}
+#hero ul li a:hover {
+  margin-bottom: -2px;
+  /* color: #30475E !important; */
+  border-bottom: 2px solid white;
+  /* transition: .3s ease-in-out; */
 }
 #hero button,
 #hero input[type="submit"] {
@@ -36,16 +82,18 @@ body {
 #hero .content h1 {
   font-weight: 700;
   font-size: 3rem;
+  text-shadow: 3px 3px 10px black;
 }
 #hero .content p {
   font-weight: 400;
-  font-size: .9rem;
+  font-size: 1rem;
+  text-shadow: 5px 5px 8px black;
 }
 #hero .content a {
   font-weight: 700;
   font-size: .9rem;
-  color: var(--bg-secondary);
-}
+  color: var(--bg-maroon);
+} 
 
 #layanan h2,
 #fitur h2,
@@ -53,7 +101,7 @@ body {
 #testimonial h2 {
   font-weight: 700;
   font-size: 2.5rem;
-  color: var(--bg-primary);
+  color: var(--bg-coklat-200);
 }
 #layanan p {
   color: #000;
@@ -61,25 +109,26 @@ body {
 #layanan .row h5 {
   font-size: 1.2rem;
   font-weight: bold;
-  color: var(--bg-primary);
+  color: var(--bg-coklat-200);
 }
 #layanan .row p {
-  font-size: .7rem;
+  font-size: .8rem;
 }
 #layanan .card {
   background-color: #fff;
-  transition: all .5s ease-in-out;
+  transition: all 1s ease;
+  height: 280px;
 }
-#layanan .card {
-  max-height: 250px;
+#layanan .card img {
+  width: 50px;
+  background-color: var(--bg-coklat-200);
+  transition: all 1s;
 }
 #layanan .card:hover {
   /* background: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary)); */
-  background-color: var(--bg-primary);
-  opacity: 1;
+  background-color: var(--bg-coklat-300);
 }
 #layanan .card:hover img{
-  transition: all .5s;
   background-color: #fff !important;
 }
 #layanan .card:hover h5,
@@ -89,7 +138,7 @@ body {
 }
 
 #main {
-  background-image: url("../Assets/img/Img-search.png");
+  background-image: url("../Assets/img-kreatif/bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -115,7 +164,7 @@ body {
   background-color: rgba(255, 255, 255, .8);
 }
 #main nav a {
-  color: var(--bg-primary);
+  color: var(--bg-coklat-200);
 }
 
 #rekomedasi {
@@ -127,14 +176,23 @@ body {
 #rekomendasi .card .row small {
   font-size: .8rem;
 }
-#rekomendasi .card:hover {
-  /* background-image: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary)); */
+/* #rekomendasi .card:hover {
   background-color: var(--bg-secondary);
-}
-#rekomendasi .card:hover h5, 
+} */
+/* #rekomendasi .card:hover h5, 
 #rekomendasi .card:hover p {
   color: #fff;
   transition: all .3s;
+} */
+#rekomendasi .card .d-flex i{
+  padding: 8px;
+  transform: scale(1);
+  background-color: rgb(200, 200, 200);
+  transition: all .5s ease;
+}
+#rekomendasi .card .d-flex i:hover{
+  padding: 8px;
+  transform: scale(1.2);
 }
 
 #fitur .row .card-fitur {
@@ -151,18 +209,22 @@ body {
 #fitur .row .card-fitur:hover .overlay {
   opacity: 1;
 }
+#fitur .row .card-fitur:hover .card-1 {
+  opacity: 1;
+}
 #fitur .row .card-1 {
-  background-image: url("../Assets/img/Fitur\ Rumah\ 1.png");
+  background-image: url("../Assets/img-kreatif/category/fashion.jpg");
 }
 #fitur .row .card-2 {
-  background-image: url("../Assets/img/Fitur\ Rumah\ 2.png");
+  background-image: url("../Assets/img-kreatif/category/souvenir.jpg");
 }
 #fitur .row .card-3 {
-  background-image: url("../Assets/img/Fitur\ Rumah\ 3.png");
+  background-image: url("../Assets/img-kreatif/category/boneka.jpg");
 }
 
 #testimonial {
   padding: 80px 0;
+  background-color: white;
 }
 
 #testimonial .card:hover {
@@ -171,7 +233,7 @@ body {
 }
 
 #testimonial .card-title {
-  color: var(--bg-primary);
+  color: var(--bg-coklat-300);
   font-weight: 600;
 }
 
@@ -186,17 +248,27 @@ body {
 }
 
 #contacts {
-  background-image: url("../Assets/img/kontak-img.png");
+  background-image: url("../Assets/img-kreatif/bg-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
+  position: relative;
 }
 
 #contacts .container-fluid{
   background-color: rgba(0, 0, 0, .5);
   height: 100vh;
+}
+#contacts::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  bottom: 0;
+  background-image: linear-gradient(0deg, rgba(1,1,3,1) 1%, rgba(255,255,255, 0) 100%)
 }
 #contacts .row h2 {
   line-height: 45px;
@@ -216,13 +288,31 @@ body {
 }
 
 footer {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right bottom,
-    var(--bg-primary),
-    var(--bg-secondary) 80%
-  );
+    var(--bg-coklat-400),
+    var(--bg-navy) 80%
+  ); */
+  background-color: #000;
 }
 
-footer a:hover {
+footer ul li a:hover {
   color: #ffd43b !important;
+}
+
+footer .row h5 {
+  font-weight: 700;
+}
+
+footer .row p,
+footer .row ul li a {
+  font-size: .8em;
+}
+
+footer .row .d-flex a {
+  color: var(--bg-coklat-400);
+}
+
+footer .row .d-flex a:hover {
+  color: var(--bg-navy);
 }
