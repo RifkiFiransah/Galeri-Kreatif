@@ -160,11 +160,18 @@ a {
   position: absolute;
   z-index: 1;
 }
-#hero ul li a:hover {
+#hero .navbar-nav li .nav-link:hover {
   margin-bottom: -2px;
-  /* color: #30475E !important; */
   border-bottom: 2px solid white;
-  /* transition: .3s ease-in-out; */
+}
+#hero .navbar-nav .dropdown-menu .dropdown-item:hover {
+  /* margin-bottom: -2px; */
+  color: var(--bg-coklat-300);
+}
+#hero .navbar-nav li .text-primary:hover {
+  margin-bottom: -2px;
+  color: var(--bg-coklat-300);
+  border-bottom: 2px solid var(--bg-coklat-300);
 }
 #hero button,
 #hero input[type="submit"] {
@@ -187,7 +194,7 @@ a {
 }
 
 #layanan h2,
-#fitur h2,
+#kategori h2,
 #rekomendasi h2,
 #testimonial h2 {
   font-weight: 700;
@@ -229,24 +236,19 @@ a {
 }
 
 #produk {
-  background-image: url("../Assets/img-kreatif/bg-1.jpg");
+  /* background-image: url("../Assets/img-kreatif/bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+  background-color: var(--bg-coklat-300);
   height: 100vh;
 }
 #produk h2 {
   font-weight: 700;
   font-size: 2.3rem;
 }
-/* #produk p {
-  font-weight: 400;
-  width: 60%;
-  margin: auto;
-} */
 #produk .row ul {
   background-color: rgba(255, 255, 255, 0.5);
-  /* width: 30%; */
 }
 #produk .row ul li a {
   color: #000;
@@ -258,9 +260,6 @@ a {
   color: var(--bg-coklat-200);
 }
 
-/* #rekomedasi {
-  min-height: 100vh;
-} */
 #rekomendasi .card {
   transition: all 0.3s;
   /* height: 100px; */
@@ -290,30 +289,33 @@ a {
   transform: scale(1.2);
 }
 
-#fitur .row .card-fitur {
+#kategori .row .card-fitur {
   background-repeat: no-repeat; 
   background-size: cover;
-  width: 30%;
-  height: 30rem;
+  /* width: 30%; */
+  height: 25rem;
 }
-#fitur .row .card-fitur .overlay {
+#kategori .row .card-fitur .overlay {
   opacity: 0;
   background-color: rgba(0, 0, 0, .5);
   transition: all 1s ease;
 }
-#fitur .row .card-fitur:hover .overlay {
+#kategori .row .card-fitur:hover .overlay {
   opacity: 1;
 }
-#fitur .row .card-fitur:hover .card-1 {
+#kategori .row .card-fitur:hover .card-1 {
   opacity: 1;
 }
-#fitur .row .card-1 {
+#kategori .row .card-1 {
   background-image: url("../Assets/img-kreatif/category/fashion.jpg");
 }
-#fitur .row .card-2 {
+#kategori .row .card-2 {
   background-image: url("../Assets/img-kreatif/category/souvenir.jpg");
 }
-#fitur .row .card-3 {
+#kategori .row .card-3 {
+  background-image: url("../Assets/img-kreatif/category/tas.jpg");
+}
+#kategori .row .card-4 {
   background-image: url("../Assets/img-kreatif/category/boneka.jpg");
 }
 
@@ -386,11 +388,6 @@ a {
 }
 
 footer {
-  /* background-image: linear-gradient(
-    to right bottom,
-    var(--bg-coklat-400),
-    var(--bg-navy) 80%
-  ); */
   background-color: #000;
 }
 
@@ -408,9 +405,9 @@ footer .row ul li a {
 }
 
 footer .row .d-flex a {
-  color: var(--bg-coklat-400);
+  color: var(--bg-coklat-300);
 }
 
 footer .row .d-flex a:hover {
-  color: var(--bg-navy);
+  color: var(--bg-coklat-400);
 }
