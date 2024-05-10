@@ -1,24 +1,35 @@
 :root {
-  --bg-coklat-100: #F7DEB2;
-  --bg-coklat-200: #D09B69;
-  --bg-coklat-300: #A36F44;
-  --bg-coklat-400: #6B4732;
-  --bg-coklat-500: #3F2D26;
-  --bg-hijau: #8C9839;
-  --bg-maroon: #803D3B;
-  --bg-navy: #30475E;
+  --bg-coklat-100: #f7deb2;
+  --bg-coklat-200: #d09b69;
+  --bg-coklat-300: #a36f44;
+  --bg-coklat-400: #6b4732;
+  --bg-coklat-500: #3f2d26;
+  --bg-hijau: #8c9839;
+  --bg-maroon: #803d3b;
+  --bg-navy: #30475e;
+  --font-serif: "Marcellus", serif;
+  --font-sans-serif: "Oxygen", sans-serif;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-sans-serif);
   font-size: 16px;
-  background-color: aliceblue;
-  color: #fff !important;
+  background-color: white;
+  /* color: #fff !important; */
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Marcellus', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
 }
-p {
-  font-family: 'Oxygen', sans-serif;
+p,
+a {
+  font-family: var(--font-sans-serif);
+}
+.element-to-animate {
+  transition: .3s ease-in-out;
 }
 .text-kreatif {
   color: var(--bg-coklat-400);
@@ -40,6 +51,80 @@ p {
 .btn-coklat-300:hover {
   background-color: var(--bg-coklat-400);
 }
+/* Bootstrap Custom */
+.navbar-brand {
+  color: var(--bg-coklat-300);
+}
+.navbar-brand:hover {
+  color: var(--bg-coklat-400);
+}
+.navbar-toggler {
+  outline: none;
+  border: none;
+  border-radius: none;
+  padding: 0;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 0;
+}
+
+.btn {
+  border-radius: 5px !important;
+}
+.btn-primary {
+  background-color: var(--bg-coklat-300);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: var(--bg-coklat-400) !important;
+}
+.btn-primary:focus {
+  background-color: var(--bg-coklat-400);
+}
+.btn-secondary {
+  background-color: white;
+  border: 1px solid var(--bg-coklat-300) !important;
+  color: var(--bg-coklat-300) !important;
+}
+.btn-secondary:hover {
+  background-color: var(--bg-coklat-300) !important;
+  color: white !important;
+}
+.btn-outline-white {
+  border: 1px solid white;
+  color: white;
+}
+.btn-outline-white:hover {
+  border: 1px solid var(--bg-coklat-300);
+  background-color: var(--bg-coklat-300);
+  color: white;
+}
+
+.font-sans-serif {
+  font-family: var(--font-sans-serif);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.text-primary {
+  color: var(--bg-coklat-300) !important;
+}
+.text-primary:hover {
+  color: var(--bg-coklat-400) !important;
+}
+
+.dropdown-item:focus {
+  background-color: var(--bg-coklat-300) !important;
+  color: white !important;
+}
+
+.form-control {
+  background-color: white !important;
+}
+
 #hero {
   background-image: url("../Assets/img-kreatif/bg-3.jpg");
   background-position: center;
@@ -49,9 +134,10 @@ p {
   height: 100vh;
   position: relative;
   overflow-y: hidden;
+  z-index: 1;
 }
 #hero a {
-  font-family: "Marcellus","Poppins", sans-serif;
+  font-family: "Marcellus", "Poppins", sans-serif;
 }
 #hero::after {
   content: "";
@@ -60,9 +146,14 @@ p {
   height: 30%;
   width: 100%;
   bottom: 0;
-  background-image: linear-gradient(0deg, rgba(1,1,3,1) 1%, rgba(255,255,255, 0) 100%)
+  background-image: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 1%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: -1;
 }
-#hero .bg-1{
+#hero .bg-1 {
   top: 82%;
   width: 100%;
   height: 100vh;
@@ -91,9 +182,9 @@ p {
 }
 #hero .content a {
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--bg-maroon);
-} 
+}
 
 #layanan h2,
 #fitur h2,
@@ -101,7 +192,7 @@ p {
 #testimonial h2 {
   font-weight: 700;
   font-size: 2.5rem;
-  color: var(--bg-coklat-200);
+  color: var(--bg-coklat-300);
 }
 #layanan p {
   color: #000;
@@ -112,7 +203,7 @@ p {
   color: var(--bg-coklat-200);
 }
 #layanan .row p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 #layanan .card {
   background-color: #fff;
@@ -128,53 +219,57 @@ p {
   /* background: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary)); */
   background-color: var(--bg-coklat-300);
 }
-#layanan .card:hover img{
+#layanan .card:hover img {
   background-color: #fff !important;
 }
 #layanan .card:hover h5,
 #layanan .card:hover p {
-  transition: all .5s;
+  transition: all 0.5s;
   color: #fff;
 }
 
-#main {
+#produk {
   background-image: url("../Assets/img-kreatif/bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
-#main h2 {
+#produk h2 {
   font-weight: 700;
   font-size: 2.3rem;
 }
-#main p {
+/* #produk p {
   font-weight: 400;
   width: 60%;
   margin: auto;
+} */
+#produk .row ul {
+  background-color: rgba(255, 255, 255, 0.5);
+  /* width: 30%; */
 }
-#main .row ul {
-  background-color: rgba(255, 255, 255, .5);
-  width: 30%;
-}
-#main .row ul li a {
+#produk .row ul li a {
   color: #000;
 }
-#main nav {
-  background-color: rgba(255, 255, 255, .8);
+#produk nav {
+  background-color: rgba(255, 255, 255, 0.8);
 }
-#main nav a {
+#produk nav a {
   color: var(--bg-coklat-200);
 }
 
-#rekomedasi {
-  height: 100vh;
-}
+/* #rekomedasi {
+  min-height: 100vh;
+} */
 #rekomendasi .card {
-  transition: all .3s;
+  transition: all 0.3s;
+  /* height: 100px; */
 }
 #rekomendasi .card .row small {
-  font-size: .8rem;
+  font-size: 0.8rem;
+}
+#rekomendasi img {
+  object-fit: cover;
 }
 /* #rekomendasi .card:hover {
   background-color: var(--bg-secondary);
@@ -184,13 +279,13 @@ p {
   color: #fff;
   transition: all .3s;
 } */
-#rekomendasi .card .d-flex i{
+#rekomendasi .card .d-flex i {
   padding: 8px;
   transform: scale(1);
   background-color: rgb(200, 200, 200);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
-#rekomendasi .card .d-flex i:hover{
+#rekomendasi .card .d-flex i:hover {
   padding: 8px;
   transform: scale(1.2);
 }
@@ -229,7 +324,7 @@ p {
 
 #testimonial .card:hover {
   transform: scale(1.03);
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 #testimonial .card-title {
@@ -252,14 +347,13 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  /* min-height: 90vh; */
   overflow: hidden;
   position: relative;
 }
 
-#contacts .container-fluid{
-  background-color: rgba(0, 0, 0, .5);
-  height: 100vh;
+#contacts .container-fluid {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 #contacts::after {
   content: "";
@@ -268,7 +362,11 @@ p {
   height: 20%;
   width: 100%;
   bottom: 0;
-  background-image: linear-gradient(0deg, rgba(1,1,3,1) 1%, rgba(255,255,255, 0) 100%)
+  background-image: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 1%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 #contacts .row h2 {
   line-height: 45px;
@@ -279,10 +377,10 @@ p {
   font-size: 1rem;
 }
 #contacts .row li {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 #contacts .row form input {
-  background: #DDE6ED;
+  background: #dde6ed;
   border: none;
   box-shadow: none;
 }
@@ -297,7 +395,7 @@ footer {
 }
 
 footer ul li a:hover {
-  color: #ffd43b !important;
+  color: var(--bg-coklat-300) !important;
 }
 
 footer .row h5 {
@@ -306,7 +404,7 @@ footer .row h5 {
 
 footer .row p,
 footer .row ul li a {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 footer .row .d-flex a {

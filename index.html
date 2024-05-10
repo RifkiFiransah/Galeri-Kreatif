@@ -10,27 +10,48 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Marcellus&Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icons -->
-    <script src="https://kit.fontawesome.com/80e4319211.js" crossorigin="anonymous"></script>
-
+    <script
+      src="https://kit.fontawesome.com/80e4319211.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
 
+  <body>
     <section class="hero" id="hero">
       <div class="layer-hero"></div>
       <nav class="navbar navbar-expand-lg py-lg-3 fixed-top">
-        <div class="container-fluid mx-5">
+        <div class="container-fluid px-2 px-md-5">
           <!-- <a class="navbar-brand fw-bold text-white nav-scroll" href="#">GaleriKreatif</a> -->
-          <a class="navbar-brand fw-bold text-white nav-scroll" href="#"><img src="./Assets/img-kreatif/logo/kreatif-putih.png" class="logo-brand" width="25px" alt="">GaleriKreatif</a>
+          <a class="navbar-brand fw-bold text-white nav-scroll" href="#"
+            ><img
+              src="./Assets/img-kreatif/logo/kreatif-putih.png"
+              class="logo-brand"
+              width="25px"
+              alt=""
+            />GaleriKreatif</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -45,12 +66,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-auto">
               <li class="nav-item me-3">
-                <a class="nav-link text-white nav-scroll" aria-current="page" href="#"
+                <a
+                  class="nav-link text-white nav-scroll"
+                  aria-current="page"
+                  href="#"
                   >Beranda</a
                 >
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link text-white nav-scroll" href="#">About</a>
+                <a class="nav-link text-white nav-scroll" href="#layanan"
+                  >Layanan</a
+                >
               </li>
               <li class="nav-item me-3 dropdown">
                 <a
@@ -65,29 +91,30 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Produk Kami</a></li>
                   <li><a class="dropdown-item" href="#">Kategori</a></li>
-                  <li><a class="dropdown-item" href="#">Cari Produk Terbaik</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#produk">Cari Produk Terbaik</a>
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">Testimoni</a>
+                    <a class="dropdown-item" href="#testimonial">Testimoni</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link text-white nav-scroll" href="#">Layanan</a>
+                <a class="nav-link text-white nav-scroll" href="#">Lokasi</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link text-white nav-scroll" href="#">Kontak</a>
+                <a class="nav-link text-white nav-scroll" href="#contacts"
+                  >Kontak</a
+                >
               </li>
             </ul>
             <form class="d-flex gap-3" role="search">
-              <button
-                class="btn btn-coklat-300 text-white rounded-0 border-0 px-3"
-                type="submit"
-              >
+              <button class="btn btn-primary text-white px-3" type="submit">
                 Masuk
               </button>
               <input
-                class="btn btn-outline-light rounded-0 px-3 btn-scroll"
+                class="btn btn-outline-white px-3 btn-scroll"
                 type="submit"
                 value="Daftar"
                 aria-label="Daftar"
@@ -97,18 +124,18 @@
         </div>
       </nav>
       <div class="content my-5">
-        <div class="row container-fluid p-5 hero-content">
-          <div class="col-lg-6 mx-3 my-5">
-            <h1 class="mt-5 mb-3">Membantu Temukan Rumah Impian</h1>
-            <p class="w-75 mb-3">
-              <b>Rumah Impian</b> hadir untuk temukan rumah terbaik untukmu,
-              untuk di jual ataupun di sewa dengan sumber terpercaya
+        <div class="container-fluid hero px-2 px-md-5 hero-content">
+          <div
+            class="d-flex flex-column justify-content-center align-items-start vh-100"
+          >
+            <h1 class="col-lg-6 text-white">
+              Jelajahi Koleksi Seni yang Beragam dan Memukau
+            </h1>
+            <p class="col-lg-6 text-white">
+              Temukan ragam karya istimewa dari para pengrajin terampil yang
+              tersebar di seluruh Nusantara.
             </p>
-            <a
-              href="#"
-              class="btn btn-md rounded-0 btn-light py-3 px-5"
-              >Temukan Rumah</a
-            >
+            <a href="#" class="btn btn-secondary px-3">Jelajahi Produk Kami</a>
           </div>
         </div>
         <div class="bg-1">
@@ -119,42 +146,58 @@
     </section>
 
     <section class="layanan" id="layanan">
-      <div class="container-fluid p-5 mb-5">
-        <div class="text-center py-5">
-          <h2 class="mb-3">Layanan Kami</h2>
-          <p>Galeri Kreatif hadir menjadi solusi bagi kamu.</p>
-        </div>
-        <div class="row justify-content-center gap-3 px-5">
-          <div class="col-12 col-md-8 col-lg">
-            <div class="card border-0 shadow-lg rounded overflow-hidden py-2">
-              <img src="./Assets/img-kreatif/icon/icon-shop-1.png" class="img-fluid mt-5 mx-auto rounded-circle p-1">
-              <div class="card-body text-center">
-                <h5 class="card-title mb-3">Shop Online</h5>
-                <p class="card-text px-4 mb-5">
-                  Rumah Impian kini menjadi kenyataan, Beli rumah baru dengan fasilitas terbaik dengan lingkungan yang nyaman.
-                </p>
+      <div class="container-fluid px-2 px-md-5 py-5">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center min-vh-100"
+        >
+          <div class="row justify-content-center align-items-center text-center mb-5">
+            <h2 class="mb-3 text-primary">Layanan Kami</h2>
+            <p class="col-md-6">Galeri Kreatif hadir menjadi solusi bagi kamu.</p>
+          </div>
+          <div class="row justify-content-center gap-3">
+            <div class="col-12 col-md-8 col-lg">
+              <div class="card rounded overflow-hidden py-2">
+                <img
+                  src="./Assets/img-kreatif/icon/icon-shop-1.png"
+                  class="img-fluid mt-5 mx-auto rounded-circle p-1"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-3">Shop Online</h5>
+                  <p class="card-text px-4 mb-5">
+                    Rumah Impian kini menjadi kenyataan, Beli rumah baru dengan
+                    fasilitas terbaik dengan lingkungan yang nyaman.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-8 col-lg">
-            <div class="card border-0 shadow-lg rounded overflow-hidden py-2">
-              <img src="./Assets/img-kreatif/icon/icon-support-1.png" class="img-fluid mt-5 mx-auto rounded-circle p-1">
-              <div class="card-body text-center">
-                <h5 class="card-title mb-3">Customer Support 24/7</h5>
-                <p class="card-text px-4 mb-5">
-                  Sewa Rumah yang indah untuk keluarga anda, pilihan terbaik untuk tempat tinggal keluarga mu.
-                </p>
+            <div class="col-12 col-md-8 col-lg">
+              <div class="card rounded overflow-hidden py-2">
+                <img
+                  src="./Assets/img-kreatif/icon/icon-support-1.png"
+                  class="img-fluid mt-5 mx-auto rounded-circle p-1"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-3">Customer Support 24/7</h5>
+                  <p class="card-text px-4 mb-5">
+                    Sewa Rumah yang indah untuk keluarga anda, pilihan terbaik
+                    untuk tempat tinggal keluarga mu.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-8 col-lg">
-            <div class="card border-0 shadow-lg rounded overflow-hidden py-2">
-              <img src="./Assets/img-kreatif/icon/icon-secure-3.png" class="img-fluid mt-5 mx-auto rounded-circle p-1">
-              <div class="card-body text-center">
-                <h5 class="card-title mb-3">Secure Transaction</h5>
-                <p class="card-text px-5 mb-5">
-                  Beli Rumah sempurna dengan harga terbaik kualitas terjamin dari sumber terpercaya
-                </p>
+            <div class="col-12 col-md-8 col-lg">
+              <div class="card rounded overflow-hidden p">
+                <img
+                  src="./Assets/img-kreatif/icon/icon-secure-3.png"
+                  class="img-fluid mt-5 mx-auto rounded-circle p-1"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-3">Secure Transaction</h5>
+                  <p class="card-text px-5 mb-5">
+                    Beli Rumah sempurna dengan harga terbaik kualitas terjamin
+                    dari sumber terpercaya
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -162,152 +205,237 @@
       </div>
     </section>
 
-    <section id="main" class="main">
-      <div class="container-fluid p-5 mb-5">
-        <div class="text-center pt-5">
-          <h2>Telusuri Produk Galery Kreatif</h2>
-          <p class="my-3">Sekarang Anda dapat Menghemat semua hal stres, waktu, dan biaya tersembunyi, dengan ratusan rumah untuk anda</p>
-        </div>
-        <div class="row justify-content-start p-5">
-          <div class="col-md align-items-start">
-            <nav class="nav rounded-bottom shadow-lg py-3 pe-3">
-              <a class="nav-link me-3" aria-current="page" href="#"><i class="fa fa-house me-1"></i> Jenis Kerajinan</a>
-              <a class="nav-link me-3" href="#"><i class="fa fa-dollar me-1"></i> Range Harga</a>
-              <a class="nav-link" href="#">Cari berdasarkan lokasi, ID, Property</a>
-              <form class="d-flex ms-auto" role="search">
-                <input class="form-control px-3 me-2" type="search" placeholder="Search....." aria-label="Search">
-                <button class="btn btn-coklat-300 px-5 rounded-0 shadow text-white" type="submit">Cari</button>
-              </form>
-              </div>
-            </nav>
+    <section id="produk" class="produk">
+      <div class="container-fluid px-2 px-md-5 py-5">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center min-vh-100"
+        >
+          <div class="row justify-content-center align-items-center text-center mb-5">
+            <h2 class="mb-3 text-white">Telusuri Produk Galery Kreatif</h2>
+            <p class="text-white col-md-6">
+              Sekarang Anda dapat Menghemat semua hal stres, waktu, dan biaya
+              tersembunyi, dengan ratusan rumah untuk anda
+            </p>
+          </div>
+          <div class="row justify-content-start">
+            <div class="col-md align-items-start">
+              <nav class="nav d-flex flex-column rounded shadow-lg p-3">
+                <a class="nav-link px-0" aria-current="page" href="#"
+                  ><i class="fa fa-house me-1"></i> Jenis Kerajinan</a
+                >
+                <a class="nav-link px-0" href="#"
+                  ><i class="fa fa-dollar me-1"></i> Range Harga</a
+                >
+                <a class="nav-link px-0" href="#"
+                  >Cari berdasarkan lokasi, ID, Property</a
+                >
+                <form class="d-flex ms-auto" role="search">
+                  <input
+                    class="form-control px-3 me-2"
+                    type="search"
+                    placeholder="Search....."
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btn-coklat-300 px-5 rounded-0 shadow text-white"
+                    type="submit"
+                  >
+                    Cari
+                  </button>
+                </form>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="rekomendasi" class="rekomendasi">
-      <div class="container-fluid p-5">
-        <div class="text-center pt-5">
-          <h2 class="mb-3">Rekomendasi Kerajinan Untuk Mu</h2>
-        </div>
-        <div class="row justify-content-center p-5">
-          <div class="col-md-4 mb-5">
-            <div class="card border-0 shadow-lg rounded overflow-hidden" style="transition: 1s;">
-              <img src="./Assets/img-kreatif/tas-1.jpg" class="img-card-top">
-              <div class="card-body">
-                <h5 class="card-title">Fabric Chair</h5>
-                <div class="d-flex gap-3 justify-content-between align-items-center mt-4">
-                  <p class="card-text mb-1">
-                    <span class="text-muted text-decoration-line-through">$105.00</span> 
-                    $95.00
-                  </p>
-                  <a href="#" class="card-text text-dark">
-                    <i class="fa fa-cart-shopping shadow-md rounded-circle"></i>
-                  </a>
+      <div class="container-fluid px-2 px-md-5 py-5">
+        <div class="d-flex flex-column justify-content-center">
+          <div class="row justify-content-center align-items-center text-center mb-5">
+            <h2 class="mb-3">Rekomendasi Kerajinan Untuk Mu</h2>
+            <p class="col-md-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              cupiditate at, itaque soluta ex fuga! Facere reiciendis harum
+              iusto id.
+            </p>
+          </div>
+          <div class="row justify-content-center gap-5 mb-5">
+            <div class="col-12 col-sm-5 col-lg-3">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img
+                  src="./Assets/img-kreatif/tas-1.jpg"
+                  class="img-card-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fabric Chair</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1">
+                      <span class="text-muted text-decoration-line-through"
+                        >$105.00</span
+                      >
+                      $95.00
+                    </p>
+                    <a href="#" class="card-text text-dark">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-5 col-lg-3">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img
+                  src="./Assets/img-kreatif/gelang-1.jpg"
+                  class="img-card-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fabric Chair</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1">
+                      <span class="text-muted text-decoration-line-through"
+                        >$105.00</span
+                      >
+                      $95.00
+                    </p>
+                    <a href="#" class="card-text text-dark">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-5 col-lg-3">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img
+                  src="./Assets/img-kreatif/papper-tissue.jpg"
+                  class="img-card-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fabric Chair</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1">
+                      <span class="text-muted text-decoration-line-through"
+                        >$105.00</span
+                      >
+                      $95.00
+                    </p>
+                    <a href="#" class="card-text text-dark">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-5 col-lg-3">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img
+                  src="./Assets/img-kreatif/note-book.jpg"
+                  class="img-card-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fabric Chair</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1">
+                      <span class="text-muted text-decoration-line-through"
+                        >$105.00</span
+                      >
+                      $95.00
+                    </p>
+                    <a href="#" class="card-text text-dark">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-5 col-lg-3">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img
+                  src="./Assets/img-kreatif/case-hp.jpg"
+                  class="img-card-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fabric Chair</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1">
+                      <span class="text-muted text-decoration-line-through"
+                        >$105.00</span
+                      >
+                      $95.00
+                    </p>
+                    <a href="#" class="card-text text-dark">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-5 col-lg-3">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img
+                  src="./Assets/img-kreatif/tas-2.jpg"
+                  class="img-card-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fabric Chair</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1">
+                      <span class="text-muted text-decoration-line-through"
+                        >$105.00</span
+                      >
+                      $95.00
+                    </p>
+                    <a href="#" class="card-text text-dark">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-5">
-            <div class="card border-0 shadow-lg rounded overflow-hidden" style="transition: 1s;">
-              <img src="./Assets/img-kreatif/gelang-1.jpg" class="img-card-top">
-              <div class="card-body">
-                <h5 class="card-title">Fabric Chair</h5>
-                <div class="d-flex gap-3 justify-content-between align-items-center mt-4">
-                  <p class="card-text mb-1">
-                    <span class="text-muted text-decoration-line-through">$105.00</span> 
-                    $95.00
-                  </p>
-                  <a href="#" class="card-text text-dark">
-                    <i class="fa fa-cart-shopping shadow-md rounded-circle"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-md btn-primary py-2 px-3"
+              >Lihat lainnya <i class="fa fa-sort ms-2"></i
+            ></a>
           </div>
-          <div class="col-md-4 mb-5">
-            <div class="card border-0 shadow-lg rounded overflow-hidden" style="transition: 1s;">
-              <img src="./Assets/img-kreatif/papper-tissue.jpg" class="img-card-top">
-              <div class="card-body">
-                <h5 class="card-title">Fabric Chair</h5>
-                <div class="d-flex gap-3 justify-content-between align-items-center mt-4">
-                  <p class="card-text mb-1">
-                    <span class="text-muted text-decoration-line-through">$105.00</span> 
-                    $95.00
-                  </p>
-                  <a href="#" class="card-text text-dark">
-                    <i class="fa fa-cart-shopping shadow-md rounded-circle"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card border-0 shadow-lg rounded overflow-hidden" style="transition: 1s;">
-              <img src="./Assets/img-kreatif/note-book.jpg" class="img-card-top">
-              <div class="card-body">
-                <h5 class="card-title">Fabric Chair</h5>
-                <div class="d-flex gap-3 justify-content-between align-items-center mt-4">
-                  <p class="card-text mb-1">
-                    <span class="text-muted text-decoration-line-through">$105.00</span> 
-                    $95.00
-                  </p>
-                  <a href="#" class="card-text text-dark">
-                    <i class="fa fa-cart-shopping shadow-md rounded-circle"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card border-0 shadow-lg rounded overflow-hidden" style="transition: 1s;">
-              <img src="./Assets/img-kreatif/case-hp.jpg" class="img-card-top">
-              <div class="card-body">
-                <h5 class="card-title">Fabric Chair</h5>
-                <div class="d-flex gap-3 justify-content-between align-items-center mt-4">
-                  <p class="card-text mb-1">
-                    <span class="text-muted text-decoration-line-through">$105.00</span> 
-                    $95.00
-                  </p>
-                  <a href="#" class="card-text text-dark">
-                    <i class="fa fa-cart-shopping shadow-md rounded-circle"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card border-0 shadow-lg rounded overflow-hidden" style="transition: 1s;">
-              <img src="./Assets/img-kreatif/tas-2.jpg" class="img-card-top">
-              <div class="card-body">
-                <h5 class="card-title">Fabric Chair</h5>
-                <div class="d-flex gap-3 justify-content-between align-items-center mt-4">
-                  <p class="card-text mb-1">
-                    <span class="text-muted text-decoration-line-through">$105.00</span> 
-                    $95.00
-                  </p>
-                  <a href="#" class="card-text text-dark">
-                    <i class="fa fa-cart-shopping shadow-md rounded-circle"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center mb-5">
-          <a href="#" class="btn btn-md bg-coklat-300 text-kreatif-300 px-3 rounded-0 py-2">Lihat lainnya <i class="fa fa-sort ms-2"></i></a>
         </div>
       </div>
     </section>
 
     <section id="fitur" class="fitur">
-      <div class="container-fluid p-5">
+      <div class="container-fluid px-2 px-md-5 py-5">
         <div class="d-flex justify-content-between px-3">
           <div class="title">
-            <h2 class="fw-bold" style="color: var(--bg-coklat-200);">Fitur Rumah</h2>
+            <h2 class="fw-bold">Fitur Rumah</h2>
           </div>
           <div class="button">
-            <button type="submit" class="btn btn-md text-light px-4 py-3 rounded-0" style="background-color: var(--bg-coklat-200);">Lihat Semua.... <i class="fa fa-arrow-down"></i></button>
+            <button type="submit" class="btn btn-md btn-primary text-light px-4 py-2">Lihat Semua <i class="fa fa-arrow-right ps-2"></i></button>
           </div>
         </div>
         <div class="row my-5 align-items-center ps-3">
@@ -318,7 +446,7 @@
                   <h4 class="fw-bold">Kamar Tidur</h4>
                   <p class="fs-6">Rumah minimalis Type A-2</p>
                   <h5>IDR. 200JT</h5>
-                  <a href="#" class="btn btn-mid btn-success rounded-0 mt-3 mb-5">Lihat Rumah</a>
+                  <a href="#" class="btn btn-mid btn-primary rounded-0 mt-3 mb-5">Lihat Rumah</a>
                 </div>
               </div>
             </div>
@@ -328,7 +456,7 @@
                   <h4 class="fw-bold">Kamar Tidur</h4>
                   <p class="fs-6">Rumah minimalis Type A-2</p>
                   <h5>IDR. 200JT</h5>
-                  <a href="#" class="btn btn-mid btn-success rounded-0 mt-3 mb-5">Lihat Rumah</a>
+                  <a href="#" class="btn btn-mid btn-primary rounded-0 mt-3 mb-5">Lihat Rumah</a>
                 </div>
               </div>
             </div>
@@ -338,7 +466,7 @@
                   <h4 class="fw-bold">Kamar Tidur</h4>
                   <p class="fs-6">Rumah minimalis Type A-2</p>
                   <h5>IDR. 200JT</h5>
-                  <a href="#" class="btn btn-mid btn-success rounded-0 mt-3 mb-5">Lihat Rumah</a>
+                  <a href="#" class="btn btn-mid btn-primary mt-3 mb-5">Lihat Rumah</a>
                 </div>
               </div>
             </div>
@@ -348,72 +476,112 @@
     </section>
 
     <section id="testimonial" class="testimonial">
-      <div class="container-fluid py-5 px-3">
+      <div class="container-fluid px-2 px-md-5 py-5">
         <div class="row justify-content-center align-items-center">
-          <div class="text-center mb-5">
-            <h2>Testimonial</h2>
-            <p class="text-secondary">Some quotes from our happy customers</p>
+          <div class="row justify-content-center align-items-center text-center mb-5">
+            <h2 class="mb-3">Testimonial</h2>
+            <p class="col-md-6">Some quotes from our happy customers</p>
           </div>
           <div class="row gap-3 justify-content-center">
-            <div class="card px-4 py-2 shadow-lg border-0 col-sm-8 col-md-5 col-lg-3">
+            <div
+              class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-3"
+            >
               <div class="row align-items-center">
                 <div class="card-body">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="./Assets/img/user1.jpg" class="img-fluid rounded-circle" alt="..." style="height: 50px;">
+                    <img
+                      src="./Assets/img-kreatif/user1.jpg"
+                      class="img-fluid rounded-circle"
+                      alt="..."
+                      style="height: 50px"
+                    />
                     <div class="d-flex justify-content-between w-100">
-                      <div class="">
-                        <h5 class="card-title">John Doe</h5>
-                        <h6 class="card-subtitle">Pelanggan</h6>
+                      <div>
+                        <h5 class="card-title font-sans-serif">John Doe</h5>
+                        <h6 class="card-subtitle font-sans-serif">Pelanggan</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <h6 class="fw-bold"><i class="fa-solid fa-star icon-star"></i> 4.3</h6>
+                        <h6 class="fw-bold font-sans-serif">
+                          <i class="fa-solid fa-star icon-star"></i> 4.3
+                        </h6>
                       </div>
                     </div>
                   </div>
                   <div class="card-text border-top pt-3">
-                    <p class="text-secondary text-center">Saya sangat terkesan dengan kualitas dan desain tasnya yang unik. Tasnya terbuat dari benang berkualitas tinggi dan dirajut dengan rapi. Desainnya pun sangat cantik dan tidak pasaran.</p>
+                    <p class="text-secondary text-center">
+                      Saya sangat terkesan dengan kualitas dan desain tasnya
+                      yang unik. Tasnya terbuat dari benang berkualitas tinggi
+                      dan dirajut dengan rapi. Desainnya pun sangat cantik dan
+                      tidak pasaran.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card px-4 py-2 shadow-lg border-0 col-sm-8 col-md-5 col-lg-3">
+            <div
+              class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-3"
+            >
               <div class="row align-items-center">
                 <div class="card-body">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="./Assets/img/user1.jpg" class="img-fluid rounded-circle" alt="..." style="height: 50px;">
+                    <img
+                      src="./Assets/img-kreatif/user1.jpg"
+                      class="img-fluid rounded-circle"
+                      alt="..."
+                      style="height: 50px"
+                    />
                     <div class="d-flex justify-content-between w-100">
-                      <div class="">
-                        <h5 class="card-title">John Doe</h5>
-                        <h6 class="card-subtitle">Pelanggan</h6>
+                      <div>
+                        <h5 class="card-title font-sans-serif">John Doe</h5>
+                        <h6 class="card-subtitle font-sans-serif">Pelanggan</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <h6 class="fw-bold"><i class="fa-solid fa-star icon-star"></i> 4.3</h6>
+                        <h6 class="fw-bold font-sans-serif">
+                          <i class="fa-solid fa-star icon-star"></i> 4.3
+                        </h6>
                       </div>
                     </div>
                   </div>
                   <div class="card-text border-top pt-3">
-                    <p class="text-secondary text-center">Antingnya sangat cantik dan sesuai dengan gambar di toko. Desainnya floral dengan warna-warna yang cerah. Antingnya pun ringan dan nyaman dipakai.</p>
+                    <p class="text-secondary text-center">
+                      Antingnya sangat cantik dan sesuai dengan gambar di toko.
+                      Desainnya floral dengan warna-warna yang cerah. Antingnya
+                      pun ringan dan nyaman dipakai.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card px-4 py-2 shadow-lg border-0 col-sm-8 col-md-5 col-lg-3">
+            <div
+              class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-3"
+            >
               <div class="row align-items-center">
                 <div class="card-body">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="./Assets/img/user1.jpg" class="img-fluid rounded-circle" alt="..." style="height: 50px;">
+                    <img
+                      src="./Assets/img-kreatif/user1.jpg"
+                      class="img-fluid rounded-circle"
+                      alt="..."
+                      style="height: 50px"
+                    />
                     <div class="d-flex justify-content-between w-100">
-                      <div class="">
-                        <h5 class="card-title">John Doe</h5>
-                        <h6 class="card-subtitle">Pelanggan</h6>
+                      <div>
+                        <h5 class="card-title font-sans-serif">John Doe</h5>
+                        <h6 class="card-subtitle font-sans-serif">Pelanggan</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <h6 class="fw-bold"><i class="fa-solid fa-star icon-star"></i> 4.3</h6>
+                        <h6 class="fw-bold font-sans-serif">
+                          <i class="fa-solid fa-star icon-star"></i> 4.3
+                        </h6>
                       </div>
                     </div>
                   </div>
                   <div class="card-text border-top pt-3">
-                    <p class="text-secondary text-center">Saya puas dengan pembelian saya dari DekorasiUnik. Saya merekomendasikan toko ini kepada siapa saja yang mencari dekorasi rumah yang unik dan ramah lingkungan.</p>
+                    <p class="text-secondary text-center">
+                      Saya puas dengan pembelian saya dari DekorasiUnik. Saya
+                      merekomendasikan toko ini kepada siapa saja yang mencari
+                      dekorasi rumah yang unik dan ramah lingkungan.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -425,23 +593,25 @@
 
     <section id="contacts" class="contacts">
       <div class="layer-contact"></div>
-      <div class="container-fluid p-5">
-        <div class="row mx-5 my-5 pb-5">
-          <div class="col-md-6 mt-3">
-            <h2 class="fw-bold mb-4">Ingin tau lebih banyak..? <br>
-            silahkan kontak kami <br>
-            Kami siap  membantu
+      <div class="container-fluid px-2 px-md-5 py-5">
+        <div class="row my-5 pb-5">
+          <div class="col-md-6 mt-3 text-white">
+            <h2 class="fw-bold mb-4">
+              Ingin tau lebih banyak..? <br />
+              silahkan kontak kami <br />
+              Kami siap membantu
             </h2>
             <h5 class="fw-bold my-3">Kontak</h5>
             <ul class="list-inline">
               <li class="mb-2">
-                <i class="far fa-building fs-6"></i> Jl. Pelajar Pejuang 123 Majalaya Bandung Indonesia
+                <i class="far fa-building pe-2"></i> Jl. Pelajar Pejuang 123
+                Majalaya Bandung Indonesia
               </li>
               <li class="mb-2">
-                <i class="fa fa-phone-volume"></i> 022-6545-2041
+                <i class="fa fa-phone-volume pe-2"></i> 022-6545-2041
               </li>
               <li class="mb-2">
-                <i class="far fa-envelope"></i> galer@gmail.com
+                <i class="far fa-envelope pe-2"></i> galerikreatif@gmail.com
               </li>
             </ul>
             <h5 class="fw-bold mb-3">Social Media</h5>
@@ -459,13 +629,31 @@
             </ul>
           </div>
           <div class="col-md-6 mt-3">
-            <div class="card bg-light rounded shadow-lg border-0 p-3">
+            <div class="card bg-white rounded shadow-lg border-0 p-3">
               <div class="card-body mt-4">
-                <h3 class="card-text text-center mb-4" style="color: var(--bg-coklat-500);">Ada Pertanyaan?</h3>
+                <h3
+                  class="card-text text-center mb-4"
+                  style="color: var(--bg-coklat-500)"
+                >
+                  Ada Pertanyaan?
+                </h3>
                 <form action="">
-                  <input type="text" class="form-control rounded-0 p-3 mb-3" placeholder="Masukan email disini...">
-                  <input type="text" class="form-control rounded-0 p-3 mb-3" placeholder="Pertanyaan Anda...">
-                  <button type="submit" class="btn btn-lg text-white w-100 rounded-0 btn-coklat-300">Kirim</button>
+                  <input
+                    type="text"
+                    class="form-control rounded-0 p-3 mb-3"
+                    placeholder="Masukan email disini..."
+                  />
+                  <input
+                    type="text"
+                    class="form-control rounded-0 p-3 mb-3"
+                    placeholder="Pertanyaan Anda..."
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn-lg text-white w-100 rounded-0 btn-coklat-300"
+                  >
+                    Kirim
+                  </button>
                 </form>
               </div>
             </div>
@@ -478,36 +666,54 @@
       <div class="container-fluid py-5 px-3 px-sm-5">
         <div class="row gap-3">
           <div class="col-12 col-sm-10 col-md-5 col-lg-5 mb-5 mb-md-0">
-            <a class="navbar-brand fw-bold fs-4 text-light" href="#">
-              <img src="" alt="">GaleriKreatif
+            <a class="navbar-brand fw-bold fs-4 text-light font-serif" href="#">
+              <img src="" alt="" /> GaleriKreatif
             </a>
-            <p class="mt-2 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quod ipsa non quidem voluptatibus molestias a enim eum quas facilis.</p>
+            <p class="mt-2 mb-4 text-white">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+              quod ipsa non quidem voluptatibus molestias a enim eum quas
+              facilis.
+            </p>
             <div class="d-flex gap-3">
-              <a class="btn btn-light" href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a class="btn btn-light" href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a class="btn btn-light" href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a class="btn btn-light" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a class="btn btn-light" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="btn btn-light" href="#"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
             </div>
           </div>
           <div class="col-12 col-sm-10 col-md-5 col-lg-2 mb-5 mb-md-0">
-            <h5 class="text-uppercase">Menu</h5>
+            <h5 class="text-uppercase text-white font-sans-serif">Menu</h5>
             <ul class="list-unstyled mb-0">
-              <li >
+              <li>
                 <a href="#!" class="text-light text-decoration-none">Home</a>
               </li>
               <li>
                 <a href="#!" class="text-light text-decoration-none">About</a>
               </li>
               <li>
-                <a href="#!" class="text-light text-decoration-none">Services</a>
+                <a href="#!" class="text-light text-decoration-none"
+                  >Services</a
+                >
               </li>
               <li>
-                <a href="#!" class="text-light text-decoration-none">Recomendations</a>
+                <a href="#!" class="text-light text-decoration-none"
+                  >Recomendations</a
+                >
               </li>
               <li>
-                <a href="#!" class="text-light text-decoration-none">Categories</a>
+                <a href="#!" class="text-light text-decoration-none"
+                  >Categories</a
+                >
               </li>
               <li>
-                <a href="#!" class="text-light text-decoration-none">Testimonials</a>
+                <a href="#!" class="text-light text-decoration-none"
+                  >Testimonials</a
+                >
               </li>
               <li>
                 <a href="#!" class="text-light text-decoration-none">Contact</a>
@@ -515,24 +721,32 @@
             </ul>
           </div>
           <div class="col-12 col-sm-10 col-md-5 col-lg-2 mb-5 mb-md-0">
-            <h5 class="text-uppercase">Categories</h5>
+            <h5 class="text-uppercase text-white font-sans-serif">Categories</h5>
             <ul class="list-unstyled mb-0">
-              <li >
-                <a href="#!" class="text-light text-decoration-none">Kategori 1</a>
+              <li>
+                <a href="#!" class="text-light text-decoration-none"
+                  >Kategori 1</a
+                >
               </li>
               <li>
-                <a href="#!" class="text-light text-decoration-none">Kategori 2</a>
+                <a href="#!" class="text-light text-decoration-none"
+                  >Kategori 2</a
+                >
               </li>
               <li>
-                <a href="#!" class="text-light text-decoration-none">Kategori 3</a>
+                <a href="#!" class="text-light text-decoration-none"
+                  >Kategori 3</a
+                >
               </li>
             </ul>
           </div>
           <div class="col-12 col-sm-10 col-md-5 col-lg-2 mb-5 mb-md-0">
-            <h5 class="text-uppercase">About Us</h5>
+            <h5 class="text-uppercase text-white font-sans-serif">About Us</h5>
             <ul class="list-unstyled mb-0">
-              <li >
-                <a href="#!" class="text-light text-decoration-none">Contact Us</a>
+              <li>
+                <a href="#!" class="text-light text-decoration-none"
+                  >Contact Us</a
+                >
               </li>
               <li>
                 <a href="#!" class="text-light text-decoration-none">FAQ</a>
@@ -545,7 +759,13 @@
         </div>
       </div>
       <div class="text-center p-3 border-top">
-        <p> &copy; <script>document.write(new Date().getFullYear())</script> Copyright by <span class="text-warning">R2C</span> All Right Reserved</p>
+        <p class="text-white">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Copyright by <span class="text-primary">R2C</span> All Right Reserved
+        </p>
       </div>
     </footer>
 

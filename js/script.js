@@ -14,26 +14,27 @@ window.addEventListener("scroll", function () {
   }
   let top = window.scrollY;
   if (top >= 10) {
-    navbar.classList.add("bg-light");
+    navbar.classList.add("bg-white");
     navbar.classList.add("shadow-lg");
-    btnScroll.classList.remove("bg-light");
-    btnScroll.classList.add("bg-coklat-300");
-    btnScroll.classList.add("text-kreatif-300");
+    navbar.classList.add("element-to-animate");
+    // btnScroll.classList.remove("bg-white");
+    btnScroll.classList.add("btn-secondary");
+    // btnScroll.classList.add("text-primary");
     logoBrand.src = "./Assets/img-kreatif/logo/kreatif-coklat.png"
 
     navLink.forEach((nav) => {
       nav.classList.remove("text-white");
-      nav.classList.add("text-kreatif");
+      nav.classList.add("text-primary");
     });
   } else {
     navLink.forEach((nav) => {
       nav.classList.add("text-white");
-      nav.classList.remove("text-kreatif");
+      nav.classList.remove("text-primary");
     });
     navbar.classList.remove("shadow-lg");
-    btnScroll.classList.remove("bg-coklat-300");
-    btnScroll.classList.remove("text-kreatif-300");
+    btnScroll.classList.remove("btn-secondary");
+    // btnScroll.classList.remove("text-primary");
     logoBrand.src = "./Assets/img-kreatif/logo/kreatif-putih.png"
-    navbar.classList.remove("bg-light");
+    navbar.classList.remove("bg-white");
   }
 });
