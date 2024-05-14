@@ -31,6 +31,9 @@ p,
 a {
   font-family: var(--font-sans-serif);
 }
+p {
+  font-size: 0.8rem;
+}
 .element-to-animate {
   transition: .3s ease-in-out;
 }
@@ -139,20 +142,17 @@ a {
   overflow-y: hidden;
   z-index: 10;
 }
-#hero a {
-  font-family: "Marcellus", "Poppins", sans-serif;
-}
 #hero::after {
   content: "";
   display: block;
   position: absolute;
-  height: 30%;
+  height: 100%;
   width: 100%;
   bottom: 0;
   background-image: linear-gradient(
     0deg,
     rgba(1, 1, 3, 1) 1%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 255, 255, 0) 70%
   );
   z-index: -1;
 }
@@ -183,17 +183,16 @@ a {
 #hero .content h1 {
   font-weight: 700;
   font-size: 3rem;
-  text-shadow: 3px 3px 10px black;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, .7);
 }
 #hero .content p {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   text-shadow: 5px 5px 8px black;
 }
 #hero .content a {
   font-weight: 700;
   font-size: 0.9rem;
-  color: var(--bg-maroon);
 }
 
 #layanan h2,
@@ -201,8 +200,11 @@ a {
 #rekomendasi h2,
 #testimonial h2 {
   font-weight: 700;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   color: var(--bg-coklat-300);
+}
+#layanan, #kategori {
+  background-color: #f8f8f8;
 }
 #layanan p {
   color: #000;
@@ -223,7 +225,7 @@ a {
 #layanan .card img {
   width: 50px;
   background-color: var(--bg-coklat-200);
-  transition: all 1s;
+  transition: .3s ease-in;
 }
 #layanan .card:hover {
   /* background: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary)); */
@@ -234,7 +236,7 @@ a {
 }
 #layanan .card:hover h5,
 #layanan .card:hover p {
-  transition: all 0.5s;
+  transition: 0.3s ease-in;
   color: #fff;
 }
 
@@ -263,6 +265,9 @@ a {
   color: var(--bg-coklat-200);
 }
 
+#rekomendasi h5 {
+  font-family: var(--font-sans-serif);
+}
 #rekomendasi .card {
   transition: all 0.3s;
   /* height: 100px; */
@@ -272,6 +277,10 @@ a {
 }
 #rekomendasi img {
   object-fit: cover;
+  transition: .3s ease-in-out;
+}
+#rekomendasi img:hover {
+  transform: scale(1.03);
 }
 /* #rekomendasi .card:hover {
   background-color: var(--bg-secondary);
@@ -284,7 +293,7 @@ a {
 #rekomendasi .card .d-flex i {
   padding: 8px;
   transform: scale(1);
-  background-color: rgb(200, 200, 200);
+  background-color: var(--bg-coklat-200);
   transition: all 0.5s ease;
 }
 #rekomendasi .card .d-flex i:hover {
@@ -373,11 +382,6 @@ a {
     rgba(255, 255, 255, 0) 100%
   );
 }
-#contacts .row h2 {
-  line-height: 45px;
-  letter-spacing: 1.5px;
-  font-size: 2.3rem;
-}
 #contacts .row h5 {
   font-size: 1rem;
 }
@@ -418,6 +422,7 @@ footer .row .d-flex a:hover {
 #lokasi p {
   color: #000;
 }
+#about h2,
 #layanan h2,
 #fitur h2,
 #rekomendasi h2,
@@ -427,8 +432,7 @@ footer .row .d-flex a:hover {
   font-size: 2.5rem;
   color: var(--bg-coklat-200);
 }
-#lokasi h3{
-  font-size: 1.4rem;
+#lokasi h4{
   color: var(--bg-coklat-200);
 }
 #lokasi{
