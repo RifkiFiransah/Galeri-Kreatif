@@ -52,12 +52,20 @@
           <a
             class="navbar-brand fw-bold text-white nav-scroll"
             href="./index.html"
-            ><img
+          >
+            <img
               src="./Assets/img-kreatif/logo/kreatif-putih.png"
-              class="logo-brand"
+              class="logo-brand logo-brand-putih"
               width="25px"
               alt=""
-            />GaleriKreatif</a
+            />
+            <img
+              src="./Assets/img-kreatif/logo/kreatif-coklat.png"
+              class="logo-brand logo-brand-coklat"
+              width="25px"
+              alt=""
+            />
+            GaleriKreatif</a
           >
           <button
             class="navbar-toggler"
@@ -68,7 +76,9 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa fa-bars navbar-icon toggler-icon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-auto">
@@ -151,9 +161,12 @@
             <h1 class="col-lg-6 text-white">
               Jelajahi Koleksi Seni yang Beragam dan Memukau
             </h1>
-            <p class="col-lg-6 text-white">
-              Temukan ragam karya istimewa dari para pengrajin terampil yang
-              tersebar di seluruh Nusantara.
+            <p class="col-lg-5 text-white text-justify">
+              <b>Temukan ragam karya istimewa</b> yang tercipta dari para
+              pengrajin terampil di seluruh penjuru Nusantara.
+              <b>Galeri Kreatif</b> menghadirkan koleksi seni kerajinan tangan
+              yang memukau serta mencerminkan kekayaan budaya dan tradisi
+              bangsa.
             </p>
             <a href="#" class="btn btn-primary shadow px-3 py-2"
               >Jelajahi Produk Kami</a
@@ -172,7 +185,7 @@
           <div class="col-md-5 col-lg-5 col-xl-4">
             <img
               src="./Assets/img-kreatif/bg-4.jpg"
-              class="img-fluid rounded w-100"
+              class="img-fluid rounded w-100 object-fit-cover"
               alt=""
             />
           </div>
@@ -277,7 +290,7 @@
           class="d-flex flex-column justify-content-center align-items-center min-vh-100"
         >
           <div
-            class="row justify-content-center align-items-center text-center mb-5"
+            class="row justify-content-center align-items-center text-center mb-3"
           >
             <h2 class="mb-3 text-white fs-1">Telusuri Produk Galery Kreatif</h2>
             <p class="text-white col-md-6">
@@ -285,30 +298,33 @@
               berbagai jenis kerajinan untuk anda
             </p>
           </div>
-          <div class="row justify-content-start">
-            <div class="col-md align-items-start">
-              <nav class="nav d-flex flex-column rounded shadow-lg p-3">
-                <a class="nav-link px-0" aria-current="page" href="#"
-                  ><i class="fa fa-house me-1"></i> Jenis Kerajinan</a
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 col-md-8 align-items-start card-search">
+              <nav
+                class="nav d-flex flex-column flex-md-row gap-lg-3 rounded shadow-lg p-3"
+              >
+                <a class="nav-link px-0 me-md-3" aria-current="page" href="#"
+                  ><i class="fa fa-stream me-1"></i> Jenis Kerajinan</a
                 >
-                <a class="nav-link px-0" href="#"
-                  ><i class="fa fa-dollar me-1"></i> Range Harga</a
+                <a class="nav-link px-0 me-md-3" href="#"
+                  ><i class="fa fa-wallet me-1"></i> Range Harga</a
                 >
                 <a class="nav-link px-0" href="#"
                   >Cari berdasarkan lokasi, bahan, terbaru</a
                 >
-                <form class="d-flex ms-auto" role="search">
+                <form class="d-flex ms-auto w-100" role="search">
                   <input
                     class="form-control px-3 me-2"
                     type="search"
-                    placeholder="Search....."
+                    placeholder="&#xf002; Search....."
                     aria-label="Search"
+                    style="font-family: Arial, FontAwesome"
                   />
                   <button
-                    class="btn btn-coklat-300 px-5 rounded-0 shadow text-white"
+                    class="btn btn-coklat-300 px-4 d-flex align-items-center rounded-0 text-white"
                     type="submit"
                   >
-                    Cari
+                    <i class="fa fa-search me-2"></i>Cari
                   </button>
                 </form>
               </nav>
@@ -331,7 +347,7 @@
             </p>
           </div>
           <div class="row justify-content-center gap-3 mb-5">
-            <div class="col-5 col-sm-5 col-lg-3 p-0">
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
               <div class="card rounded overflow-hidden" style="transition: 1s">
                 <img
                   src="./Assets/img-kreatif/tas-1.jpg"
@@ -342,11 +358,12 @@
                   <div
                     class="d-flex gap-3 justify-content-between align-items-center mt-4"
                   >
-                    <p class="card-text mb-1">
-                      <span class="text-muted text-decoration-line-through"
-                        >$105.00</span
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.150.000</span
                       >
-                      $95.00
+                      Rp.100.000
                     </p>
                     <a href="#" class="card-text text-white">
                       <i
@@ -357,7 +374,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-5 col-sm-5 col-lg-3 p-0">
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
               <div class="card rounded overflow-hidden" style="transition: 1s">
                 <img
                   src="./Assets/img-kreatif/gelang-1.jpg"
@@ -368,11 +385,12 @@
                   <div
                     class="d-flex gap-3 justify-content-between align-items-center mt-4"
                   >
-                    <p class="card-text mb-1">
-                      <span class="text-muted text-decoration-line-through"
-                        >$105.00</span
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.50.000</span
                       >
-                      $95.00
+                      Rp.35.000
                     </p>
                     <a href="#" class="card-text text-white">
                       <i
@@ -383,7 +401,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-5 col-sm-5 col-lg-3 p-0">
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
               <div class="card rounded overflow-hidden" style="transition: 1s">
                 <img
                   src="./Assets/img-kreatif/papper-tissue.jpg"
@@ -394,11 +412,12 @@
                   <div
                     class="d-flex gap-3 justify-content-between align-items-center mt-4"
                   >
-                    <p class="card-text mb-1">
-                      <span class="text-muted text-decoration-line-through"
-                        >$105.00</span
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.80.000</span
                       >
-                      $95.00
+                      Rp.60.000
                     </p>
                     <a href="#" class="card-text text-white">
                       <i
@@ -409,7 +428,88 @@
                 </div>
               </div>
             </div>
-            <div class="col-5 col-sm-5 col-lg-3 p-0">
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img
+                  src="./Assets/img-kreatif/outfit-1.jpg"
+                  class="img-card-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6">Pakaian setelah wanita</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.200.000</span
+                      >
+                      Rp.175.000
+                    </p>
+                    <a href="#" class="card-text text-white">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img
+                  src="./Assets/img-kreatif/boneka-2.jpg"
+                  class="img-card-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6">Boneka Handmade Kreatif</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.100.000</span
+                      >
+                      Rp.80.000
+                    </p>
+                    <a href="#" class="card-text text-white">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img
+                  src="./Assets/img-kreatif/sneaker-1.jpg"
+                  class="img-card-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6">Sepatu Custom</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.200.000</span
+                      >
+                      Rp.180.000
+                    </p>
+                    <a href="#" class="card-text text-white">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
               <div class="card rounded overflow-hidden" style="transition: 1s">
                 <img
                   src="./Assets/img-kreatif/note-book.jpg"
@@ -420,11 +520,12 @@
                   <div
                     class="d-flex gap-3 justify-content-between align-items-center mt-4"
                   >
-                    <p class="card-text mb-1">
-                      <span class="text-muted text-decoration-line-through"
-                        >$105.00</span
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.70.000</span
                       >
-                      $95.00
+                      Rp.50.000
                     </p>
                     <a href="#" class="card-text text-white">
                       <i
@@ -435,7 +536,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-5 col-sm-5 col-lg-3 p-0">
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
               <div class="card rounded overflow-hidden" style="transition: 1s">
                 <img
                   src="./Assets/img-kreatif/case-hp.jpg"
@@ -446,11 +547,12 @@
                   <div
                     class="d-flex gap-3 justify-content-between align-items-center mt-4"
                   >
-                    <p class="card-text mb-1">
-                      <span class="text-muted text-decoration-line-through"
-                        >$105.00</span
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.70.000</span
                       >
-                      $95.00
+                      Rp.60.000
                     </p>
                     <a href="#" class="card-text text-white">
                       <i
@@ -461,7 +563,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-5 col-sm-5 col-lg-3 p-0">
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
               <div class="card rounded overflow-hidden" style="transition: 1s">
                 <img
                   src="./Assets/img-kreatif/tas-2.jpg"
@@ -472,11 +574,90 @@
                   <div
                     class="d-flex gap-3 justify-content-between align-items-center mt-4"
                   >
-                    <p class="card-text mb-1">
-                      <span class="text-muted text-decoration-line-through"
-                        >$105.00</span
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.300.000</span
                       >
-                      $95.00
+                      Rp.250.000
+                    </p>
+                    <a href="#" class="card-text text-white">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img src="./Assets/img-kreatif/topi.jpg" class="img-card-top" />
+                <div class="card-body">
+                  <h5 class="card-title fs-6">Topi Kreatif</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.70.000</span
+                      >
+                      Rp. 55.000
+                    </p>
+                    <a href="#" class="card-text text-white">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img
+                  src="./Assets/img-kreatif/gerabah-1.jpeg"
+                  class="img-card-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6">Gerabah</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.135.000</span
+                      >
+                      Rp.120.000
+                    </p>
+                    <a href="#" class="card-text text-white">
+                      <i
+                        class="fa fa-cart-shopping shadow-md rounded-circle"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-sm-5 col-lg-3 p-0 card-rekomendasi">
+              <div class="card rounded overflow-hidden" style="transition: 1s">
+                <img
+                  src="./Assets/img-kreatif/batik-2.jpg"
+                  class="img-card-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6">Kain Batik Mega Mendung</h5>
+                  <div
+                    class="d-flex gap-3 justify-content-between align-items-center mt-4"
+                  >
+                    <p class="card-text mb-1 fw-bold">
+                      <span
+                        class="text-muted fw-normal text-decoration-line-through"
+                        >Rp.150.000</span
+                      >
+                      Rp.135.000
                     </p>
                     <a href="#" class="card-text text-white">
                       <i
@@ -489,7 +670,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="#" class="btn btn-md btn-primary py-2 px-3"
+            <a href="#" class="btn btn-md btn-primary py-2 px-3" id="loadMore"
               >Lihat lainnya <i class="fa fa-sort ms-2"></i
             ></a>
           </div>
@@ -499,7 +680,7 @@
 
     <section id="kategori" class="kategori">
       <div class="container-fluid px-3 px-md-5 py-5 my-5">
-        <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center justify-content-between pt-5">
           <div class="title">
             <h2 class="mb-3 fs-1 col-8 col-md-12">Kategori Kerajinan</h2>
           </div>
@@ -589,12 +770,12 @@
     </section>
 
     <section id="testimonial" class="testimonial">
-      <div class="container-fluid px-3 px-md-5 py-5">
+      <div class="container-fluid px-3 py-5">
         <div class="row justify-content-center align-items-center">
           <div
             class="row justify-content-center align-items-center text-center"
           >
-            <h2 class="mb-3 fs-1">Testimonial</h2>
+            <h2 class="mb-3 fs-1">Testimoni</h2>
             <p class="col-md-6">
               <b>Galeri Kreatif</b> berkomitmen untuk menyediakan produk dan
               layanan berkualitas tinggi kepada pelanggan kami.
@@ -606,10 +787,10 @@
             class="carousel slide carousel-dark"
             data-bs-ride="carousel"
           >
-            <div class="carousel-inner W-100">
+            <div class="carousel-inner w-100 py-5">
               <div class="carousel-item active" data-bs-interval="4000000">
                 <div
-                  class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-3"
+                  class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-4"
                 >
                   <div class="row align-items-center">
                     <div class="card-body">
@@ -650,7 +831,7 @@
               </div>
               <div class="carousel-item">
                 <div
-                  class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-3"
+                  class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-4"
                 >
                   <div class="row align-items-center">
                     <div class="card-body">
@@ -688,7 +869,7 @@
               </div>
               <div class="carousel-item">
                 <div
-                  class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-3"
+                  class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-4"
                 >
                   <div class="row align-items-center">
                     <div class="card-body">
@@ -728,7 +909,7 @@
               </div>
               <div class="carousel-item">
                 <div
-                  class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-3"
+                  class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-4"
                 >
                   <div class="row align-items-center">
                     <div class="card-body">
@@ -768,7 +949,7 @@
               </div>
               <div class="carousel-item">
                 <div
-                  class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-3"
+                  class="card px-4 py-2 shadow border-0 col-sm-8 col-md-5 col-lg-4"
                 >
                   <div class="row align-items-center">
                     <div class="card-body">
@@ -805,37 +986,34 @@
                 </div>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+
+            <div class="carousel-prev-next my-3 ms-3">
+              <button
+                class="btn btn-secondary me-2"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="fa fa-arrow-left" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="btn btn-secondary me-2"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="next"
+              >
+                <span class="fa fa-arrow-right" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="lokasi" id="lokasi">
-      <div class="container-fluid px-3 px-md-5 py-5">
+      <div class="container-fluid px-3 px-md-5 py-5 my-5">
         <div
           class="row justify-content-center align-items-center text-center my-5"
         >
@@ -846,7 +1024,7 @@
           </p>
         </div>
         <div
-          class="d-flex flex-column flex-md-row justify-content-center gap-3 gap-md-5"
+          class="d-flex flex-column flex-md-row justify-content-center gap-3 gap-md-5 my-5"
         >
           <div class="col-md-6">
             <div class="maps rounded-3 overflow-hidden">
@@ -870,10 +1048,18 @@
                 ></i>
                 <h4>Alamat :</h4>
               </div>
-              <p>
+              <p class="mb-5">
                 Jl. Pramuka No.67, Purwawinangun, Kec. Kuningan, Kabupaten
                 Kuningan, Jawa Barat 45512
               </p>
+              <div class="d-flex align-items-center gap-2">
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="color: var(--bg-coklat-200); margin-bottom: 8px"
+                ></i>
+                <h4>Email :</h4>
+              </div>
+              <p class="mb-5">galerikreatif@gmail.com</p>
               <div class="d-flex align-items-center gap-2">
                 <i
                   class="fa-solid fa-phone"
@@ -881,7 +1067,7 @@
                 ></i>
                 <h4>Telepon :</h4>
               </div>
-              <p>08xx-xxxx-xxxx</p>
+              <p class="">08xx-xxxx-xxxx</p>
               <a href="">
                 <button
                   class="btn btn-coklat-300 px-3 rounded-1 shadow-sm text-white"
@@ -900,13 +1086,15 @@
       <div class="layer-contact"></div>
       <div class="container-fluid px-3 px-md-5 py-5">
         <div class="row my-5 pb-5">
-          <div class="col-md-6 mt-3 text-white">
-            <h2 class="mb-4 fs-1">
+          <div
+            class="col-md-6 mt-3 text-white d-flex flex-column justify-content-center"
+          >
+            <h2 class="mb-4 fs-1 w-75">
               Ingin tau lebih banyak..? <br />
               silahkan kontak kami Kami siap membantu
             </h2>
-            <h5 class="fw-bold my-3 font-sans-serif">Kontak</h5>
-            <ul class="list-inline">
+            <!-- <h5 class="fw-bold my-3 font-sans-serif">Kontak</h5> -->
+            <!-- <ul class="list-inline">
               <li class="mb-2">
                 <i class="far fa-building pe-2"></i> Jl. Pelajar Pejuang 123
                 Majalaya Bandung Indonesia
@@ -917,7 +1105,7 @@
               <li class="mb-2">
                 <i class="far fa-envelope pe-2"></i> galerikreatif@gmail.com
               </li>
-            </ul>
+            </ul> -->
             <!-- <h5 class="fw-bold mb-3">Social Media</h5>
             <ul class="list-inline d-flex gap-2">
               <li>
@@ -1011,16 +1199,6 @@
               <li>
                 <a href="#rekomendasi" class="text-light text-decoration-none"
                   >Rekomendasi</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-light text-decoration-none"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Fitur</a
                 >
               </li>
             </ul>

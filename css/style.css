@@ -32,7 +32,7 @@ a {
   font-family: var(--font-sans-serif);
 }
 p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .element-to-animate {
   transition: .3s ease-in-out;
@@ -73,6 +73,58 @@ p {
 .navbar-toggler:focus {
   outline: none;
   box-shadow: 0 0 0 0;
+}
+.toggler-icon {
+  color: white !important;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.toggler-icon-dark {
+  color: var(--bg-coklat-300) !important;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 2px solid var(--bg-coklat-300);
+}
+#hero .nav-link {
+  position: relative;
+}
+#hero .nav-link::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: white;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+#hero .text-primary:hover::before{
+  width: 100%;
+  visibility: visible;
+}
+#hero .text-primary {
+  position: relative;
+}
+#hero .text-primary::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--bg-coklat-300);
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+#hero .nav-link:hover::before{
+  width: 100%;
+  visibility: visible;
 }
 
 .btn {
@@ -163,19 +215,25 @@ p {
   position: absolute;
   z-index: 1;
 }
-#hero .navbar-nav li .nav-link:hover {
+#hero .navbar {
+  background-color: transparent;
+}
+#hero .nav-scroll {
+  color: white;
+}
+/* #hero .navbar-nav li #hero .nav-link:hover {
   margin-bottom: -2px;
   border-bottom: 2px solid white;
-}
+} */
 #hero .navbar-nav .dropdown-menu .dropdown-item:hover {
   /* margin-bottom: -2px; */
   color: var(--bg-coklat-300);
 }
-#hero .navbar-nav li .text-primary:hover {
+/* #hero .navbar-nav li .text-primary:hover {
   margin-bottom: -2px;
   color: var(--bg-coklat-300);
   border-bottom: 2px solid var(--bg-coklat-300);
-}
+} */
 #hero button,
 #hero input[type="submit"] {
   font-weight: 500;
@@ -193,6 +251,16 @@ p {
 #hero .content a {
   font-weight: 700;
   font-size: 0.9rem;
+}
+#hero .logo-brand-coklat{
+  display: none;
+}
+#hero .logo-brand-putih{
+  display: inline;
+}
+
+#about img {
+  height: 450px;
 }
 
 #layanan h2,
@@ -214,9 +282,9 @@ p {
   font-weight: bold;
   color: var(--bg-coklat-200);
 }
-#layanan .row p {
+/* #layanan .row p {
   font-size: 0.8rem;
-}
+} */
 #layanan .card {
   background-color: #fff;
   transition: all 1s ease;
@@ -259,7 +327,7 @@ p {
   color: #000;
 }
 #produk nav {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
 }
 #produk nav a {
   color: var(--bg-coklat-200);
@@ -301,6 +369,18 @@ p {
   transform: scale(1.2);
 }
 
+#rekomendasi .card-rekomendasi {
+  display: none;
+}
+
+#rekomendasi .card-rekomendasi:nth-child(1),
+#rekomendasi .card-rekomendasi:nth-child(2),
+#rekomendasi .card-rekomendasi:nth-child(3)
+ {
+  display: block;
+}
+
+
 #kategori .row .card-fitur {
   background-repeat: no-repeat; 
   background-size: cover;
@@ -335,6 +415,9 @@ p {
   padding: 80px 0;
   background-color: white;
 }
+#testimonial .card {
+  width: 350px;
+}
 
 #testimonial .card:hover {
   transform: scale(1.03);
@@ -361,13 +444,14 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* min-height: 90vh; */
+  height: 90vh;
   overflow: hidden;
   position: relative;
 }
 
 #contacts .container-fluid {
   background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
 #contacts::after {
   content: "";
@@ -441,6 +525,18 @@ footer .row .d-flex a:hover {
 
 /* Slider */
 @media (max-width: 768px) {
+  p {
+    font-size: .8rem;
+  }
+  #about img {
+    height: 100%;
+  }
+  #hero .navbar {
+    background-color: white;
+  }
+  #hero .nav-scroll {
+    color: var(--bg-coklat-300) !important;
+  }
   .carousel-inner .carousel-item > div {
     display: none;
   }
@@ -452,7 +548,28 @@ footer .row .d-flex a:hover {
     display: none;
     transition: none;
   }
-
+  .carousel-prev-next {
+    text-align: right;
+    margin: 15px;
+  }
+  .card-search {
+    margin-bottom: 20px;
+  }
+  #rekomendasi .card-rekomendasi:nth-child(3){
+    display: none;
+  }
+  .navbar-icon {
+    color: var(--bg-coklat-300) !important;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 2px solid var(--bg-coklat-300);
+  }
+  #hero .logo-brand-coklat{
+    display: inline-block;
+  }
+  #hero .logo-brand-putih{
+    display: none;
+  }
 }
 
 .carousel-inner .carousel-item.active,
@@ -489,5 +606,41 @@ footer .row .d-flex a:hover {
   .carousel-inner .carousel-item-prev,
   .carousel-item-prev:not(.carousel-item-end) {
     transform: translateX(-25%) !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  p {
+    font-size: .8rem;
+  }
+  #about img {
+    height: 350px;
+  }
+  .carousel-prev-next {
+    text-align: center;
+  }
+  .card-search {
+    margin-bottom: 20px !important;
+  }
+  #rekomendasi .card-rekomendasi:nth-child(3){
+    display: none;
+  }
+  #hero .navbar {
+    background-color: white;
+  }
+  #hero .nav-scroll {
+    color: var(--bg-coklat-300) !important;
+  }
+  .navbar-icon {
+    color: var(--bg-coklat-300) !important;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 2px solid var(--bg-coklat-300);
+  }
+  #hero .logo-brand-coklat{
+    display: inline-block;
+  }
+  #hero .logo-brand-putih{
+    display: none;
   }
 }
