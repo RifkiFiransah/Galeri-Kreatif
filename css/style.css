@@ -542,21 +542,6 @@ footer .row .d-flex a:hover {
   #hero .nav-scroll {
     color: var(--bg-coklat-300) !important;
   }
-  .carousel-inner .carousel-item > div {
-    display: none;
-  }
-  .carousel-inner .carousel-item > div:first-child {
-    display: block;
-    transition: none;
-  }
-  .carousel-inner .carousel-item:not(.active) {
-    display: none;
-    transition: none;
-  }
-  .carousel-prev-next {
-    text-align: right;
-    margin: 15px;
-  }
   .card-search {
     margin-bottom: 20px;
   }
@@ -574,6 +559,24 @@ footer .row .d-flex a:hover {
   }
   #hero .logo-brand-putih{
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+    transition: none;
+  }
+  .carousel-inner .carousel-item:not(.active) {
+    display: none;
+    transition: none;
+  }
+  .carousel-prev-next {
+    text-align: right;
+    margin: 15px;
   }
 }
 
