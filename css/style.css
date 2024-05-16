@@ -141,7 +141,7 @@ p {
   background-color: var(--bg-coklat-400);
 }
 .btn-secondary {
-  background-color: white;
+  background-color: transparent;
   border: 1px solid var(--bg-coklat-300) !important;
   color: var(--bg-coklat-300) !important;
 }
@@ -525,6 +525,11 @@ footer .row .d-flex a:hover {
 
 /* Slider */
 @media (max-width: 768px) {
+  #hero .btn-scroll {
+    background-color: transparent;
+    border: 1px solid var(--bg-coklat-300) !important;
+    color: var(--bg-coklat-300) !important;
+  }
   p {
     font-size: .8rem;
   }
@@ -627,6 +632,11 @@ footer .row .d-flex a:hover {
   }
   #hero .navbar {
     background-color: white;
+  }
+  #hero .btn-scroll {
+    background-color: transparent;
+    border: 1px solid var(--bg-coklat-300) !important;
+    color: var(--bg-coklat-300) !important;
   }
   #hero .nav-scroll {
     color: var(--bg-coklat-300) !important;
