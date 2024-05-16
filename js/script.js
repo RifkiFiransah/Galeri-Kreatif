@@ -4,39 +4,64 @@ const btnScroll = document.querySelector(".btn-scroll");
 const logoBrand = document.querySelector(".logo-brand");
 const sectionRekomendasi = document.querySelector("#rekomendasi");
 const navbarIcon = document.querySelector(".navbar-icon");
+const navbarTogler = document.querySelector(".navbar-toggler");
+const navbarCollapse = document.querySelector(".navbar-collapse");
 let screenWidth = this.window.screen.width;
 
 const pathName = window.location.href;
 const pathId = pathName.split("#").pop();
-console.log(pathId);
+// console.log(pathId);
+// console.log(document.getElementsByTagName("body"));
 
-if (screenWidth < 992) {
+if (screenWidth <= 992) {
   logoBrand.src = "./Assets/img-kreatif/logo/kreatif-coklat.png";
   navbar.classList.add("bg-white");
   navbarIcon.classList.remove("toggler-icon");
   navbarIcon.classList.add("toggler-icon-dark");
+  btnScroll.classList.add("btn-secondary");
+
   navLink.forEach((nav) => {
     nav.classList.add("text-primary");
+    nav.addEventListener("click", function () {
+      navbarCollapse.classList.remove("show");
+      navbarTogler.classList.add("collapsed");
+      navbarTogler.setAttribute("aria-expanded", "false");
+    });
   });
+} else {
+  btnScroll.classList.remove("btn-secondary");
+  //   logoBrand.src = "./Assets/img-kreatif/logo/kreatif-putih.png";
+  //   navbar.classList.remove("bg-white");
+  //   navbarIcon.classList.add("toggler-icon");
+  //   navbarIcon.classList.remove("toggler-icon-dark");
+  //   navLink.forEach((nav) => {
+  //     nav.classList.add("text-white");
+  //   });
 }
-// else {
-//   logoBrand.src = "./Assets/img-kreatif/logo/kreatif-putih.png";
-//   navbar.classList.remove("bg-white");
-//   navbarIcon.classList.add("toggler-icon");
-//   navbarIcon.classList.remove("toggler-icon-dark");
-//   navLink.forEach((nav) => {
-//     nav.classList.add("text-white");
-//   });
-// }
 
 window.addEventListener("resize", function () {
   let screenWidth = this.window.screen.width;
-
-  if (screenWidth >= 992) {
+  if (screenWidth == 992) {
+    btnScroll.classList.add("btn-secondary");
+  }
+  if (screenWidth > 992) {
     logoBrand.src = "./Assets/img-kreatif/logo/kreatif-putih.png";
     navbar.classList.remove("bg-white");
     navbarIcon.classList.add("toggler-icon");
     navbarIcon.classList.remove("toggler-icon-dark");
+    btnScroll.classList.remove("btn-secondary");
+
+    navLink.forEach((nav) => {
+      nav.classList.remove("text-primary");
+      nav.classList.add("text-white");
+    });
+  } else {
+    logoBrand.src = "./Assets/img-kreatif/logo/kreatif-coklat.png";
+    navbar.classList.add("bg-white");
+    navbarIcon.classList.remove("toggler-icon");
+    navbarIcon.classList.add("toggler-icon-dark");
+    btnScroll.classList.add("btn-secondary");
+
     navLink.forEach((nav) => {
       nav.classList.remove("text-primary");
       nav.classList.add("text-white");
@@ -44,25 +69,52 @@ window.addEventListener("resize", function () {
   }
   window.addEventListener("scroll", function () {
     let top = window.scrollY;
-    if (top < 10) {
+    if (top > 10) {
       navLink.forEach((nav) => {
         if (screenWidth >= 992) {
-          nav.classList.add("text-white");
-          nav.classList.remove("text-primary");
-        } else {
           nav.classList.remove("text-white");
           nav.classList.add("text-primary");
+        } else {
+          nav.classList.add("text-white");
+          nav.classList.remove("text-primary");
         }
       });
-      navbar.classList.remove("shadow-lg");
-      btnScroll.classList.remove("btn-secondary");
-      // btnScroll.classList.remove("text-primary");
       if (screenWidth >= 992) {
+        navbar.classList.remove("shadow-lg");
+        btnScroll.classList.add("btn-secondary");
+        btnScroll.classList.remove("text-primary");
+        logoBrand.src = "./Assets/img-kreatif/logo/kreatif-putih.png";
+        navbar.classList.add("bg-white");
+        navbarIcon.classList.add("toggler-icon");
+        navbarIcon.classList.remove("toggler-icon-dark");
+      } else {
+        btnScroll.classList.remove("btn-secondary");
+        logoBrand.src = "./Assets/img-kreatif/logo/kreatif-coklat.png";
+        navbar.classList.add("bg-white");
+        navbarIcon.classList.add("toggler-icon-dark");
+        navbarIcon.classList.remove("toggler-icon");
+      }
+    } else {
+      // navLink.forEach((nav) => {
+      //   if (screenWidth >= 992) {
+      //     nav.classList.add("text-white");
+      //     nav.classList.remove("text-primary");
+      //   } else {
+      //     nav.classList.remove("text-white");
+      //     nav.classList.add("text-primary");
+      //   }
+      // });
+      if (screenWidth > 992) {
+        navbar.classList.remove("shadow-lg");
+        btnScroll.classList.add("btn-secondary");
+        btnScroll.classList.remove("text-primary");
         logoBrand.src = "./Assets/img-kreatif/logo/kreatif-putih.png";
         navbar.classList.remove("bg-white");
         navbarIcon.classList.add("toggler-icon");
         navbarIcon.classList.remove("toggler-icon-dark");
+        btnScroll.classList.remove("btn-secondary");
       } else {
+        btnScroll.classList.add("btn-secondary");
         logoBrand.src = "./Assets/img-kreatif/logo/kreatif-coklat.png";
         navbar.classList.add("bg-white");
         navbarIcon.classList.add("toggler-icon-dark");
@@ -99,10 +151,10 @@ window.addEventListener("scroll", function () {
         nav.classList.add("text-primary");
       }
     });
-    navbar.classList.remove("shadow-lg");
-    btnScroll.classList.remove("btn-secondary");
     // btnScroll.classList.remove("text-primary");
-    if (screenWidth >= 992) {
+    if (screenWidth > 992) {
+      navbar.classList.remove("shadow-lg");
+      btnScroll.classList.remove("btn-secondary");
       logoBrand.src = "./Assets/img-kreatif/logo/kreatif-putih.png";
       navbar.classList.remove("bg-white");
       navbarIcon.classList.add("toggler-icon");
@@ -112,6 +164,7 @@ window.addEventListener("scroll", function () {
       navbar.classList.add("bg-white");
       navbarIcon.classList.add("toggler-icon-dark");
       navbarIcon.classList.remove("toggler-icon");
+      btnScroll.classList.add("btn-secondary");
     }
   }
 });
