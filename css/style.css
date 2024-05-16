@@ -17,7 +17,6 @@ body {
   font-family: var(--font-sans-serif);
   font-size: 16px;
   background-color: white;
-  /* color: #fff !important; */
 }
 h1,
 h2,
@@ -221,19 +220,9 @@ p {
 #hero .nav-scroll {
   color: white;
 }
-/* #hero .navbar-nav li #hero .nav-link:hover {
-  margin-bottom: -2px;
-  border-bottom: 2px solid white;
-} */
 #hero .navbar-nav .dropdown-menu .dropdown-item:hover {
-  /* margin-bottom: -2px; */
   color: var(--bg-coklat-300);
 }
-/* #hero .navbar-nav li .text-primary:hover {
-  margin-bottom: -2px;
-  color: var(--bg-coklat-300);
-  border-bottom: 2px solid var(--bg-coklat-300);
-} */
 #hero button,
 #hero input[type="submit"] {
   font-weight: 500;
@@ -268,7 +257,6 @@ p {
 #rekomendasi h2,
 #testimonial h2 {
   font-weight: 700;
-  /* font-size: 2.5rem; */
   color: var(--bg-coklat-300);
 }
 #layanan, #kategori {
@@ -282,9 +270,6 @@ p {
   font-weight: bold;
   color: var(--bg-coklat-200);
 }
-/* #layanan .row p {
-  font-size: 0.8rem;
-} */
 #layanan .card {
   background-color: #fff;
   transition: all 1s ease;
@@ -296,7 +281,6 @@ p {
   transition: .3s ease-in;
 }
 #layanan .card:hover {
-  /* background: linear-gradient(to right bottom, var(--bg-primary), var(--bg-secondary)); */
   background-color: var(--bg-coklat-300);
 }
 #layanan .card:hover img {
@@ -309,10 +293,6 @@ p {
 }
 
 #produk {
-  /* background-image: url("../Assets/img-kreatif/bg-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
   background-color: var(--bg-coklat-300);
   height: 100vh;
 }
@@ -338,7 +318,6 @@ p {
 }
 #rekomendasi .card {
   transition: all 0.3s;
-  /* height: 100px; */
 }
 #rekomendasi .card .row small {
   font-size: 0.8rem;
@@ -350,14 +329,6 @@ p {
 #rekomendasi img:hover {
   transform: scale(1.03);
 }
-/* #rekomendasi .card:hover {
-  background-color: var(--bg-secondary);
-} */
-/* #rekomendasi .card:hover h5, 
-#rekomendasi .card:hover p {
-  color: #fff;
-  transition: all .3s;
-} */
 #rekomendasi .card .d-flex i {
   padding: 8px;
   transform: scale(1);
@@ -384,7 +355,6 @@ p {
 #kategori .row .card-fitur {
   background-repeat: no-repeat; 
   background-size: cover;
-  /* width: 30%; */
   height: 25rem;
 }
 #kategori .row .card-fitur .overlay {
@@ -589,7 +559,6 @@ footer .row .d-flex a:hover {
   align-items: center;
   justify-content: center;  
   padding: 10px;
-  /* padding-block: 10px; */
 } 
 
 /* display 4 */
