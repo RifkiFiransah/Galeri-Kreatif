@@ -10,8 +10,6 @@ let screenWidth = this.window.screen.width;
 
 const pathName = window.location.href;
 const pathId = pathName.split("#").pop();
-// console.log(pathId);
-// console.log(document.getElementsByTagName("body"));
 
 if (screenWidth <= 992) {
   logoBrand.src = "./Assets/img-kreatif/logo/kreatif-coklat.png";
@@ -30,13 +28,6 @@ if (screenWidth <= 992) {
   });
 } else {
   btnScroll.classList.remove("btn-secondary");
-  //   logoBrand.src = "./Assets/img-kreatif/logo/kreatif-putih.png";
-  //   navbar.classList.remove("bg-white");
-  //   navbarIcon.classList.add("toggler-icon");
-  //   navbarIcon.classList.remove("toggler-icon-dark");
-  //   navLink.forEach((nav) => {
-  //     nav.classList.add("text-white");
-  //   });
 }
 
 window.addEventListener("resize", function () {
@@ -95,15 +86,6 @@ window.addEventListener("resize", function () {
         navbarIcon.classList.remove("toggler-icon");
       }
     } else {
-      // navLink.forEach((nav) => {
-      //   if (screenWidth >= 992) {
-      //     nav.classList.add("text-white");
-      //     nav.classList.remove("text-primary");
-      //   } else {
-      //     nav.classList.remove("text-white");
-      //     nav.classList.add("text-primary");
-      //   }
-      // });
       if (screenWidth > 992) {
         navbar.classList.remove("shadow-lg");
         btnScroll.classList.add("btn-secondary");
@@ -132,9 +114,7 @@ window.addEventListener("scroll", function () {
     navbar.classList.add("element-to-animate");
     navbarIcon.classList.remove("toggler-icon");
     navbarIcon.classList.add("toggler-icon-dark");
-    // btnScroll.classList.remove("bg-white");
     btnScroll.classList.add("btn-secondary");
-    // btnScroll.classList.add("text-primary");
     logoBrand.src = "./Assets/img-kreatif/logo/kreatif-coklat.png";
 
     navLink.forEach((nav) => {
@@ -151,7 +131,6 @@ window.addEventListener("scroll", function () {
         nav.classList.add("text-primary");
       }
     });
-    // btnScroll.classList.remove("text-primary");
     if (screenWidth > 992) {
       navbar.classList.remove("shadow-lg");
       btnScroll.classList.remove("btn-secondary");
@@ -235,25 +214,3 @@ loadMoreBtn.addEventListener("click", function (e) {
     behavior: "smooth",
   });
 });
-
-// document.addEventListener("DOMContentLoaded", function () {
-// let x = window.matchMedia("(max-width: 992px)");
-// x.matches
-
-// Menampilkan 3 kartu pertama
-// if (screenWidth < 992) {
-//   for (let i = 0; i < 2; i++) {
-//     if (cards[i]) {
-//       cards[i].style.display = "block";
-//     }
-//   }
-// } else {
-//   for (let i = 0; i < 3; i++) {
-//     if (cards[i]) {
-//       cards[i].style.display = "block";
-//     }
-//   }
-// }
-// if (loadMoreBtn) {
-// }
-// });
